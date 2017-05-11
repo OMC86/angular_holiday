@@ -24,8 +24,8 @@ This app will use javascript to make calculations based on selections made by th
 	- Register for mailing list
 	- Interactive form
 - App based features
-	-Calculating the cost of a bespoke holiday.
-	-Display the cost on submittance of form.
+	- Calculating the cost of a bespoke holiday.
+	- Display the cost on submittance of form.
 
 ## Tech Used
 
