@@ -1,0 +1,27 @@
+{
+  "name": "angular_holiday",
+  "version": "1.0.0",
+  "description": "Specialist travel agency web app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMC86/angular_holiday.git"
+  },
+  "keywords": [
+    "Travel",
+    "Holiday",
+    "St.Patrick",
+    "Carribean",
+    "Bespoke",
+    "Luxury"
+  ],
+  "author": "Chris Toal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMC86/angular_holiday/issues"
+  },
+  "homepage": "https://github.com/OMC86/angular_holiday#readme"
+}
