@@ -1,0 +1,30 @@
+{
+  "name": "angular_holiday",
+  "description": "Specialist travel agency web app.",
+  "main": "index.js",
+  "authors": [
+    "Chris Toal"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Travel",
+    "Holiday",
+    "St.Patrick",
+    "Carribean",
+    "Bespoke",
+    "Luxury"
+  ],
+  "homepage": "https://github.com/OMC86/angular_holiday",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
