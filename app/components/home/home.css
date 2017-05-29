@@ -1,0 +1,98 @@
+#home-image-container{
+	max-width:100%;
+	height:500px;
+	background-image: url('/assets/montserrat-wide.jpg'); 
+	background-repeat: no-repeat;
+	background-size: cover; 
+
+}
+
+.p-background{
+	color: #fff;
+}
+
+.box-title{
+	padding: 20px;
+	margin: 0px;
+}
+
+#box-one{
+	max-width: 100%;
+	background-image: url('/assets/mont-volcano.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;  
+}
+
+#box-two{
+	width: 100%;
+	background-image: url('/assets/stPatrick.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;  
+}
+
+#box-three{
+	width: 100%;
+	background-image: url('/assets/mont-patrick.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;  	
+}
+
+#box-four{
+	width: 100%;
+	background-image: url('/assets/hotel-room.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;  	
+}
+
+#box-five{
+	width: 100%;
+	background-image: url('/assets/coral.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;  	
+}
+
+#box-six{
+	width: 100%;
+	background-image: url('/assets/mont-night.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;  	
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	height: 250px;
+	margin-bottom: 25px;
+}
+
+.trans-small-box{
+	margin-top: auto; 
+	height: 50px;
+	background-color: #4a4a4a;
+	opacity:0.8;
+}
+
+.flex-p{
+	align-self: auto;
+}
+
+#trans-box{
+	height: 500px;
+	background-color: #4a4a4a;
+	opacity:0.8;
+}
+
+.box-trans{
+	background-color: #4a4a4a;
+	opacity: 0.8;
+	height:200px; 
+	border-bottom: 1px solid #979797;
+}
+
+.box-trans > p{
+	color: #fff;
+	padding: 25px;
+	align-self: center;
+}
+
+
