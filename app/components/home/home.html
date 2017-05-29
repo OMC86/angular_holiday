@@ -1,9 +1,240 @@
 <div class='container'>
 	<div class='row'>
-
 		<div class='col-sm-12 col-lg-12'>
-			<h1 class='mont-title'>{{title}}</h1>
+			<div class="home-title">
+				<h1 class='top-p'>Explore the Emerald Isle of the Cribbean</h1>
+			</div>
 		</div>
-
 	</div>
 </div>
+<div class='container-fluid'>
+	<div class='row'>
+		<div id='home-image-container' title='Montserrat costal view'>
+			<div class='container'>
+				<div class="row">
+					<div class="col-md-12">
+						<div id='trans-box'>
+							<div ng-cloak>
+								<div class="col-md-12">
+			  						<ul class="nav nav-tabs">
+				       					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(1) }">
+				          					<a href ng-click="setTab(1)">What We Offer</a>
+				       					</li>
+								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(2) }">
+								          	<a href ng-click="setTab(2)">Who We Are</a>
+								       	</li>
+								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(3) }">
+								          	<a href ng-click="setTab(3)">Why Choose Us</a>
+								       	</li>
+								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(4) }">
+							          		<a href ng-click="setTab(4)">How it Works</a>
+							       		</li>
+									</ul>
+								</div>
+
+	  				
+
+				    			<div class="col-md-8 col-md-offset-2">
+				  					<div>
+				       					<div class='p-background' ng-show="isSet(1)">
+								          	<p>10 day inclusive caribbean experience in Montserrat during the St.Patricks day
+				 							celebrations. </p>
+				 							<p>Panoramic ocean view villas, ensuite bathrooms, swimming pool and beach access.</p>
+				 							<p>Hand picked itinerary of activities to ensure you get to experience everything Montserrat has to offer </p>
+				 							<p>End of holiday Beach BBQ and the chance to ride a jet ski </p>
+				 							<p>Return travel includes flights from UK / Ireland - Antiga - Montserrat.
+				 							</p>
+								        </div>
+
+										<div class='p-background' ng-show="isSet(2)">
+								      
+								        	<p>Rochelle Lee, founder of Emerald Travel is a British born Montserration  desendant</p>
+								        	<p>Having lived and worked in Monserrat, Rochelle has built strong relationships with the locals and has a wonderful knowledge of what the island has to offer</p>
+								        	<p>Thanks to Rochelle Emerald Travel is able to bring you a bespoke caribbean  experience. 
+								        	</p>
+				     					</div>
+
+				        				<div class='p-background' ng-show="isSet(3)">
+				          		
+					          				<p>We are offering a unique experience in the caribbean travel market away from big resorts and tourist traps.</p>
+					          				<P>Our holidays are tailored to make sure you get to experience all the Island has to offer, without needing to worry about any of the complexities that come with organising a trip like this and all at an affordable price.</P>
+											<p>You can do as much or as little as you like. Group activities are not compuslory and we can help you organise your own private trips.
+											ATOL bonded flight booking.</p>
+					     				</div>
+
+				     					<div class='p-background' ng-show="isSet(4)">
+				          				
+						          			<p>Step one:<br>
+											Take a look at <a href='/'>what's on offer.</a>
+											</p>
+											<p>Step two:<br>
+											Use our calculator to <a href='/'>get a quote</a>
+											</p>
+											<p>Step three:<br>
+											To book or for further enquiries please submit the <a href='/'>contact form</a> and a member of our team will get in touch as soon as possible.</p>
+				     					</div>
+				  					</div>
+				  				</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class='container'>
+	<div class='row'>
+		<div class='col-md-12'>
+			<div class='home-title'>
+				<h2 class='top-p'>Experience St. Patrick's Montserration Style...
+				</h2>
+			</div>
+		</div>
+	
+		<div class='col-md-8 col-md-offset-2'>
+			<div class='centred-p'>
+				<p>Montserrat is the only country in the world outside Ireland to
+				honour St. Patrick’s with a public holiday. In fact, Montserrat takes it a step further and enjoys a whole week of St. Paddy celebrations. For an outstanding, hassel free, off the beaten path caribbean experience, look no further than Emerald travel Montserrat.  
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class='row'>
+		<div class='col-md-12'>
+			<div class="home-title">
+				<h3 class="top-p">Discover Montserrat</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class='col-xs-12 col-sm-4'>
+			<a href='/general'>
+				<div id='box-one' class="box" title='volcano' ng-model='a' ng-mouseover=a=true ng-mouseleave='a=false'>
+					<div class='box-trans' ng-show='a'>
+						<p>A closer look at Montserrat;
+						The island, the people, the 
+						volcano and the future.
+						</p> 
+					</div>
+					<div class=trans-small-box>
+						<div class='p-background flex-p'>
+							<p class='box-title'>Montserrat</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	
+			
+	<div class='col-xs-12 col-sm-4'>
+	<a href='' ng-click="goTo('/general#the-history')">
+		<div id='box-two' class="box" title='St. Patrick' ng-model='b' ng-mouseover=b=true ng-mouseleave='b=false'>
+			<div class='box-trans' ng-show='b'>
+				<p>Delve into the history of the
+					island and discover how 
+					St.Ptricks became a public 
+					holiday.
+				</p> 
+			</div>
+			<div class=trans-small-box>
+				<div class='p-background flex-p'>
+					<p class="box-title">History of St. Paddy's in Montserrat</p>
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>
+	<div class='col-xs-12 col-sm-4'>
+	<a href='' ng-click="goTo('/general#the-celebrations')">
+		<div id='box-three' class="box" ng-model='c' ng-mouseover=c=true ng-mouseleave='c=false'>
+		<div class='box-trans' ng-show='c'>
+				<p>A look at how Montserratians
+					celebrate this joys day.
+				</p> 
+			</div>
+			<div class=trans-small-box>
+				<div class='p-background'>
+					<p class="box-title">St. Patrick's day celebrations</p>
+				</div>
+			</div>
+		</div>
+		</a>
+	</div>	
+	</div>			
+
+		
+	
+	<div class='row'>
+		<div class='col-sm-12 col-lg-12'>
+			<div class="home-title">
+				<h3>What's on Offer</h3>
+			</div>
+		</div>
+	</div>				
+	<div class="row">
+		<div class='col-xs-12 col-sm-4'>
+			<a href='/inclusive'>
+				<div id='box-four' class="box" ng-model='d' ng-mouseover=d=true ng-mouseleave='d=false'>
+				<div class='box-trans' ng-show='d'>
+					<p>Luxurious villa, ocean views
+						and a gorgous swimming pool.
+					</p> 
+				</div>
+					<div class=trans-small-box>
+						<div class='p-background'>
+							<p class="box-title">Accomodation</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class='col-xs-12 col-sm-4'>
+			<a href='/activities'>
+				<div id='box-five' class="box" ng-model='e' ng-mouseover=e=true ng-mouseleave='e=false'>
+				<div class='box-trans' ng-show='e'>
+					<p>From spear fishing to
+					nature trecks. Have a look at all
+					the island has to offer.
+					</p> 
+				</div>
+					<div class=trans-small-box>
+						<div class='p-background'>
+							<p class="box-title">Activities</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class='col-xs-12 col-sm-4'>
+			<a href='' ng-click="goTo('/inclusive#the-itinerary')">
+				<div id='box-six' class="box" ng-model='f' ng-mouseover=f=true ng-mouseleave='f=false'>
+				<div class='box-trans' ng-show='f'>
+					<p>The itinerary you can follow if
+						you so choose. All activities
+						are included in the price.
+					</p> 
+				</div>
+					<div class=trans-small-box>
+						<div class='p-background'>
+							<p class="box-title">Inclusive itinerary</p>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>						
+	</div>
+</div>
+
+
+
+<div instruction></div>
+
+
+
+
+
