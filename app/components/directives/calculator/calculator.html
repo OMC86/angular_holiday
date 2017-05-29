@@ -1,0 +1,159 @@
+<div class="row">
+		<div class="col-md-8">
+			<form class="form-general" name='calculator' data-ng-submit='getQuote()' novalidate>
+			
+				<h3 class="no-margin pad">Claculator</h3>
+				<p class='no-margin'>Please select the options that apply to you to recieve an estimate on the final cost of your trip. </p>
+				<h4 class='pad'>Flights</h4>
+				<div class="form-group">
+					<label for="passengers">Number of passengers:</label>
+					<div class="row">
+						<div class='col-md-2 col-md-offset-1'>
+							<input type="number" id="passengers" name="passengers" class="form-control" placeholder='2' ng-model=passengers>
+						</div>
+					</div>
+                </div>  
+                <div class="form-group">  
+					<label for="origin">Country of origin:</label><br>
+					<div class="col-md-offset-1">
+						<select id='origin' ng-model='flyFrom'>			
+							<option value=''></option>		
+							<option value='england'>England</option>
+							<option value='scotland'>Scotland</option>
+							<option value='wales'>Wales</option>
+							<option value='ire'>Ireland/N.ireland</option>
+						</select>
+					</div>
+			
+					<div ng-switch='flyFrom'>
+						<div ng-switch-when='england'>
+						<p class="no-margin">Direct flights from the UK to Antigua depart from London Gatwick Airport only. If you are already in England we ask that you make your own way to Gatwick.</p>
+							<label for="airport">Select airport:</label><br>
+							<div class="col-md-offset-1">
+							<select id='airport' ng-model='airport'>
+								<option value=''></option>						<option value='gatwick'>London Gatwick</option>
+							</select>
+						</div>
+						</div>
+						<div ng-switch-when='scotland'>
+							<p class="no-margin">Direct flights from the UK to Antigua depart from London Gatwick Airport only. All other airport selections will first fly you to Gatwick and then directly to Antigua. If you would like to make your own way to Gatwick just make Gatwick your selection.</p>
+							<label for="scot-airport">Select airport:</label><br><div class="col-md-offset-1">
+							<select id='scot-airport' ng-model='airport'>
+								<option value=''></option>
+								<option value="scot">Edinburgh Airport</option>
+								<option value="scot">Glasgow Airport</option>
+								<option value="gatwick">London Gatwick</option>
+							</select>
+							</div>
+						</div>
+						<div ng-switch-when='wales'>
+							<p class="no-margin">Direct flights from the UK to Antigua depart from London Gatwick Airport only. There are no direct flights from Cardiff to Gatwick. If you would like to make your own way to Gatwick just make Gatwick your selection, otherwise we can help you book train tickets to the airport.</p>
+							<label for="welsh-airport">Select airport:</label><br>
+							<div class="col-md-offset-1">
+							<select id='welsh-airport' ng-model='airport'>
+								<option value=''></option>
+								
+								<option value="gatwick">London Gatwick</option>
+								<option value="wTrain">Train to Gatwick</option>
+								<option value="wCoach">Coach to Gatwick</option>
+							</select>
+							</div>
+						</div>
+						<div ng-switch-when='ire'>
+							<p class="no-margin">Direct flights from the UK to Antigua depart from London Gatwick Airport only. All other airport selections will first fly you to Gatwick and then directly to Antigua. If you would like to make your own way to Gatwick just make Gatwick your selection.</p>
+							<label for="ire-airport">Select airport:</label>
+							<div class="col-md-offset-1">
+							<select id='ire-airport' ng-model='airport'>
+								<option value=''></option>
+								<option value="ireland">Belfast Airport</option>
+								<option value="ireland">Cork Airport</option>
+								<option value="ireland">Dublin Airport</option>
+								<option value="gatwick">London Gatwick</option>
+							</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label>Passenger class:</label><br>
+					<div class='col-md-offset-1' id='radio-pos'>
+						<label>First Class:
+							<input type='radio' ng-model='flyClass' value='first'>
+						</label><br>
+						<label>Business Class:
+							<input type='radio' ng-model='flyClass' value='second'>
+						</label><br>
+						<label>Premium economy:
+							<input type='radio' ng-model='flyClass' value='third'><br>
+						</label><br>
+						<label>Economy:
+							<input type='radio' ng-model='flyClass' value='fourth'>
+						</label>
+					</div>
+				</div>
+			<h4 class='pad'>Accomodation</h4>
+				<div class="form-group">
+					<label for="bed">Number of bedrooms:</label>
+					<div class="row">
+						<div class="col-md-2 col-md-offset-1">
+							<input type="number" id='bed' name="bedrooms" class="form-control" placeholder='1' ng-model=bedrooms>
+						</div>
+					</div>
+				</div>	
+
+				<div class="form-group">
+					<label for="accom">Accomodation type</label><br>
+					<div class="col-md-offset-1">
+					<select id='accom' class="margin-bottom" ng-model='accom'>			
+						<option value=''></option>		
+						<option value='shared'>Shared villa</option>
+						<option value='private'>Private villa</option>
+						<option value='hotel'>Hotel</option>
+					</select>
+					</div>
+				</div>
+
+				<div ng-switch='accom'>
+					<div ng-switch-when='shared'>
+						<p class="no-margin">When staying in a shared or private villa you have the option of self catering, half board (breakfast and dinner), or breakfast only.</p>
+						<label for="group">Board option:</label>
+						<div class="col-md-offset-1">
+							<select id='group' class="margin-bottom" ng-model='board'>
+								<option value=''></option>
+								<option value="breakfast">Breakfast</option>
+								<option value="half">Half board</option>
+								<option value="self">Self catering</option>	
+							</select>
+						</div>
+					</div>
+
+					<div ng-switch-when='private'>
+						<p class="no-margin">When staying in a shared or private villa you have the option of self catering, half board (breakfast and dinner), or breakfast only.</p>
+						<label for="villa">Board option:</label>
+					<div class="col-md-offset-1">
+						<select id='villa' class="margin-bottom" ng-model='board'>
+							<option value=''></option>
+							<option value="breakfast">Breakfast</option>
+							<option value="half">Half board</option>
+							<option value="self">Self catering</option>	
+						</select>
+					</div>
+					</div>
+					<div ng-switch-when='hotel'>
+						<label for="hotel">Breakfast included?</label>
+						<div class="col-md-offset-1">
+						<select id='hotel' class="margin-bottom" ng-model='board'>
+							<option value=''></option>
+							<option value="hotelBreakfast">Yes</option>
+							<option value="self">No</option>	
+						</select>
+						</div>
+					</div>
+				</div>
+				<div class="submit-button">
+				<input id='calc-submit' type='submit' ng-disabled='calculator.$invalid'>					
+				</input>
+			</div>		
+			</form>
+		</div>
+	</div>

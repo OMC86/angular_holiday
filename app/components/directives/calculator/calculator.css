@@ -1,0 +1,19 @@
+form > h3{
+	padding:25px;
+}
+
+form p{
+	padding: 25px;
+}
+
+select{
+	padding: 25px;
+}
+
+option{
+	padding:25px;
+}
+
+label{
+	padding: 25px;
+}
