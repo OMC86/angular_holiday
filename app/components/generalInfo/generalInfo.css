@@ -1,0 +1,29 @@
+
+#map-container{
+	width:100%;
+	height: auto;
+}
+
+#map{
+	display: block;
+	margin: auto;	
+}
+
+#vocano-container{
+	width: 100%;
+	height: auto;
+}
+
+#wearing-green-container{
+	width: 100%;
+	height: auto;
+}
+
+.offset-pos{
+	border-top: 100px solid transparent;
+	margin-top: -100px;
+	-webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+
