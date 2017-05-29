@@ -4,8 +4,18 @@
     <base href="/"> <!-- needed for Angular HTML5 mode -->
     <title>Emerald Travel Montserrat</title>
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app/components/text-image.css">
+    <link rel="stylesheet" type="text/css" href="app/components/home/home.css">
+    <link rel="stylesheet" type="text/css" href="app/components/generalInfo/generalInfo.css">
+    <link rel="stylesheet" type="text/css" href="app/components/about/about.css">
+    <link rel="stylesheet" type="text/css" href="app/components/booking/booking.css">
+    <link rel="stylesheet" type="text/css" href="app/components/directives/instructions/instructions.css">
+    <link rel="stylesheet" type="text/css" href="app/components/directives/pageTitle/pageTitle.css">
+    <link rel="stylesheet" type="text/css" href="app/components/directives/calculator/calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Belleza" rel="stylesheet">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style type="text/css">
         body {
@@ -15,22 +25,77 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role='navigation'>
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="/">Emerald Travel Montserrat</a>
+	            <button type="button" class='navbar-toggle' ng-init='isCollapsed = true' ng-click='isCollapsed = !isCollapsed'>
+	               	<span class='icon-bar'></span>
+	               	<span class='icon-bar'></span>
+	               	<span class='icon-bar'></span> 
+	            </button>             
             </div>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class='nav navbar-nav navbar-right navbar-collapse' ng-class="{collapse: isCollapsed}">
                 <li><a href="/">Home</a></li>
-                <li><a href="/book">Bookings</a></li>
+                <li><a href="/booking">Bookings</a></li>
                 <li><a href="/about">About</a></li>
             </ul>
         </div>
     </nav>
-    <div ng-view>
- 
+
+    <div ng-view autoscroll='true'>
     </div>
+
+    <footer id="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="cos-sm-12 col-lg-12">
+                <div class="row">
+                    <div id="flex-container">
+
+                        <div class="flex-item">
+                            <ul class="title">Emerald Travel Montserrat</ul>
+                            <ul class="foot"><a href="/about">About</a></ul>
+                            <ul class="foot"><a href="/">Home</a></ul>
+                            <ul class="foot"><a href="/booking">Bookings</a></ul>
+                            
+                        </div>
+
+
+                        <div class="flex-item">
+                            <ul class="title">Created by</ul>
+                            <ul id="name">Chris_T</ul><br>
+                        </div>
+
+
+                        <div class="flex-item">
+                            <ul class="title">Contact</ul>
+                            <ul class="foot">E-mail: Christoal@outlook.com</ul>
+                            <ul class="foot">Twitter: Chris_T888</ul>
+                            <ul class="foot">Github: OMC86</ul>
+                        </div>
+
+                        <div class="flex-item">
+                            <ul class="title">Sources</ul>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src='app/app.js'></script>
 <script src='app/components/home/homectrl.js'></script>
+<script src='app/components/generalInfo/generalInfoCtrl.js'></script>
+<script src='app/components/activities/activitiesCtrl.js'></script>
+<script src='app/components/inclusive/inclusive.js'></script>
+<script src='app/components/about/aboutCtrl.js'></script>
+<script src='app/components/booking/bookingCtrl.js'></script>
+<script src='app/components/directives/calculator/calculatorCtrl.js'></script>
+<script src='app/components/directives/instructions/instructions.js'></script>
+<script src='app/components/directives/pageTitle/pageTitle.js'></script>
+<script src='app/components/directives/calculator/calculator.js'></script>
+<script src='app/components/directives/contact/contact.js'></script>
 </body>
 </html>
