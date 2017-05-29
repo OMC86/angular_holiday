@@ -1,0 +1,71 @@
+#booking-background{
+	width: 100%;
+	height: auto;
+	background-image: url('/assets/mont-swim.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;  	
+}
+
+#booking-box{
+	width: 100%;
+	height: 125px;
+	background-color: #4a4a4a;
+	opacity:0.8;
+	border-bottom: 1px solid #979797;
+}
+
+.form-general{
+	background-color: #4a4a4a;
+	opacity:0.8;
+	color: #fff;
+}
+
+.no-margin{
+	margin: 0px;
+}
+
+.pad{
+	padding: 10px;
+}
+
+.display-form{
+	color: #fff;
+	font-size: 20px;
+}
+
+.toggle-form-pos{
+	padding: 10px;
+}
+
+.white{
+	color: #fff;
+}
+
+#message{
+	height: 200px;
+}
+
+#submit-button{
+	width: 100px;
+	height: 30px;
+	margin: 25px;
+	background-color: black;
+	font-weight: bold;
+	opacity: 1.0;
+}
+
+#radio-pos{
+	margin-bottom: 25px;
+}
+
+#radio-pos > label{
+	padding: 5px 0 5px 0px;
+}
+
+.margin-bottom{
+	margin-bottom: 50px;
+}
+
+select{
+	color: black;
+}

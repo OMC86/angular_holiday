@@ -1,0 +1,36 @@
+<div class="container-fluid">
+	<div class='row'>
+		<div id='booking-background'>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div id='booking-box'>
+							<div class='col-md-6'>
+							<div class="toggle-form-pos">
+								<a href class='display-form' ng-click='calculator = !calculator'>Calculator
+								</a>
+								<p class="white">Use the calculator to get an idea of how much things are going to cost</p>
+							</div>
+							</div>
+							<div class='col-md-6'>
+								<div class="toggle-form-pos">
+								<a href class="display-form" ng-click='contactForm = !contactForm'>Contact form
+								</a>
+								<p class='white'>Fill in our contact for and a memebr of our team will be in touch</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					<div id="calculator" ng-hide='calculator'>
+						<calculator ng-controller='CalculatorCtrl'></calculator>	
+					</div>
+					<div id="contact-form" ng-hide='contactForm'>
+						<contact></contact>							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+			
