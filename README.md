@@ -8,7 +8,7 @@ This is a promotional web app for Emerald Travel Montserrat aimed at users who m
 
 ### What does it do?
 
-This app will give users infromation on the specialist holiday packages Emerald has on offer. Users will be able to join a mailing list and make selections on various holiday packages in order to receive an approximate price for a holiday.
+This app will give users infromation on the bespoke holiday package Emerald has on offer. Users will be able to join a mailing list and make selections on various holiday packages in order to receive an approximate price for a holiday.
 
 ### How does it work?
 
@@ -17,12 +17,14 @@ This app will use javascript to make calculations based on selections made by th
 ## Features
 
 ### Existing Features
-- None Yet
+- User based features
+  - Interactive forms
+    - claculator
+    - contact form
 
 ### Features Left to Implement
-- User based fetures
+- User based features
 	- Register for mailing list
-	- Interactive form
 - App based features
 	- Calculating the cost of a bespoke holiday.
 	- Display the cost on submittance of form.
