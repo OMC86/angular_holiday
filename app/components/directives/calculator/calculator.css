@@ -1,19 +1,21 @@
-form > h3{
-	padding:25px;
+.no-margin{
+	margin: 0px;
 }
 
-form p{
-	padding: 25px;
+.margin-bottom-25{
+	margin-bottom: 25px; 
 }
 
-select{
-	padding: 25px;
+.pad{
+	padding: 10px;
 }
 
-option{
-	padding:25px;
-}
-
-label{
-	padding: 25px;
+#bottom{
+	padding: 50px;
+	border-top: 1px solid #979797;
+	border-bottom: 1px solid #979797;
+	font-size: 20px;
+	text-align: center;
+	padding-left: 0px;
+	padding-right: 0px; 
 }
