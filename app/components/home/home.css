@@ -12,7 +12,7 @@
 }
 
 .box-title{
-	padding: 20px;
+	padding: 17px;
 	margin: 0px;
 }
 
@@ -93,6 +93,17 @@
 	color: #fff;
 	padding: 25px;
 	align-self: center;
+}
+
+@media (min-width: 768px){
+	.fit{
+		padding: 10px;
+	}
+}
+@media (min-width: 992px){
+	.fit{
+		padding: 17px;
+	}
 }
 
 
