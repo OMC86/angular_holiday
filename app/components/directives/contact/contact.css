@@ -1,0 +1,52 @@
+.form-control{
+	margin: auto;
+	width: 80%;
+}
+
+#radio-pos{
+	display: inline-block;
+	margin-bottom: 25px;
+
+}
+
+#radio-pos > label{
+	padding: 5px 25px 5px 25px;
+}
+
+.contact-message{
+	height: 200px;
+	padding: 25px;
+	text-align: center;
+	background-color: #4a4a4a;
+	opacity: 0.8;
+	color: #fff;
+}
+
+/*fade animation for forms*/
+.animate.ng-hide-add{
+	-webkit-animation: 1s form-animate-hide;
+}
+
+@-webkit-keyframes form-animate-hide{
+	0%{
+		opacity: 0.8;
+	}
+	
+	100%{
+		opacity: 0;
+	}
+}
+
+.animate.ng-hide-remove{
+	-webkit-animation: 1s form-animate-show;
+}
+
+@-webkit-keyframes form-animate-show{
+	0%{
+		opacity: 0;
+	}
+	
+	100%{
+		opacity: 0.8;
+	}
+}
