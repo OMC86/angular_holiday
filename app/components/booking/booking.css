@@ -1,14 +1,35 @@
+form > h3{
+	padding:25px;
+}
+
+form p{
+	padding: 25px;
+}
+
+select{
+	padding: 25px;
+}
+
+option{
+	padding:25px;
+}
+
+label{
+	padding: 25px;
+}
+
 #booking-background{
 	width: 100%;
-	height: auto;
-	background-image: url('/assets/mont-swim.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;  	
+	min-height: 500px;
+	background-image: url('/assets/colour.jpeg');
+	background-size: cover;
+	margin-top: -20px;  	
 }
 
 #booking-box{
 	width: 100%;
-	height: 125px;
+	height: 150px;
+	margin-top: 25px;
 	background-color: #4a4a4a;
 	opacity:0.8;
 	border-bottom: 1px solid #979797;
@@ -20,25 +41,17 @@
 	color: #fff;
 }
 
-.no-margin{
-	margin: 0px;
-}
-
-.pad{
-	padding: 10px;
-}
 
 .display-form{
-	color: #fff;
 	font-size: 20px;
-}
-
-.toggle-form-pos{
-	padding: 10px;
+	padding-top: 20px;
 }
 
 .white{
 	color: #fff;
+	margin-top: 15px!important;
+	margin-bottom: 10px!important;
+	
 }
 
 #message{
@@ -54,18 +67,17 @@
 	opacity: 1.0;
 }
 
-#radio-pos{
-	margin-bottom: 25px;
-}
-
-#radio-pos > label{
-	padding: 5px 0 5px 0px;
-}
-
-.margin-bottom{
-	margin-bottom: 50px;
-}
 
 select{
 	color: black;
 }
+
+@media (min-width: 600px){
+	#booking-box{
+		height: 100px;
+	}
+}
+
+
+
+
