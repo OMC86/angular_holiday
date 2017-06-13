@@ -1,0 +1,66 @@
+/*Style for text*/
+p{
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
+	margin-bottom: 50px;
+	margin-top: 25px;
+}
+
+/*fit images inside containers*/
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/*Style for anchor tags*/
+a{
+	text-decoration: none;
+	color: #e5da39;
+}
+
+a:hover{
+	color: #e5da39
+}
+
+
+/*Style for anchor tabs*/
+li > a{
+	color:#fff;
+	font-size: 16px;
+}
+
+li > a:hover{
+	color: black;
+}
+
+
+.top-p{
+	margin-top: 50px;
+}
+
+.bottom-p{
+	margin-bottom: 100px;
+}
+
+
+.home-title{
+	margin-top: 25px;
+	text-align: center;
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
+}
+
+/*centre paragraphs*/
+.centred-p{
+	display: block;
+	text-align: center;
+	margin: auto;
+}
+
+.left{
+	float: left;
+}
+
+.text-left{
+	text-align: left;
+}
+
