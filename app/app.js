@@ -9,7 +9,7 @@ angular.module('EmeraldApp', [
 
 	$routeProvider
 
-	.when('.', {
+	.when('/angular_holiday', {
         templateUrl: 'app/components/home/home.html',
 	    controller: 'HomeCtrl'
 	})
