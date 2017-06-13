@@ -1,7 +1,10 @@
 <div id='slide-container'>
 	<img ng-repeat='x in slides' class='slide' ng-hide='!isCurrentIndex($index)' ng-src='{{x.image}}'>
-	<a class="arrow prev" href="" ng-click="nextSlide()"><span class='glyphicon glyphicon-menu-left'></span></a>
-   	<a class="arrow next" href="" ng-click="prevSlide()"><span class="glyphicon glyphicon-menu-right"></span></a>
+	<a class="arrow prev" href="" ng-click="nextSlide()"><span class='glyphicon glyphicon-menu-left icon'></span></a>
+
+   	<a class="arrow next" href="" ng-click="prevSlide()"><span class="glyphicon glyphicon-menu-right icon"></span></a>
+ 
+
 	<nav class="slide-nav">
 		<div class='wrapper'>
 			<ul class="dots">
