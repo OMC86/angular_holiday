@@ -1,3 +1,5 @@
+/*General form styles*/
+
 form > h3{
 	padding:25px;
 }
@@ -18,6 +20,13 @@ label{
 	padding: 25px;
 }
 
+.form-general{
+	background-color: #4a4a4a;
+	opacity:0.8;
+	color: #fff;
+}
+
+/*background image*/
 #booking-background{
 	width: 100%;
 	min-height: 500px;
@@ -26,6 +35,7 @@ label{
 	margin-top: -20px;  	
 }
 
+/*Box for form toggles*/
 #booking-box{
 	width: 100%;
 	height: 150px;
@@ -35,13 +45,7 @@ label{
 	border-bottom: 1px solid #979797;
 }
 
-.form-general{
-	background-color: #4a4a4a;
-	opacity:0.8;
-	color: #fff;
-}
-
-
+/*Style for toggle*/
 .display-form{
 	font-size: 20px;
 	padding-top: 20px;
@@ -66,7 +70,6 @@ label{
 	font-weight: bold;
 	opacity: 1.0;
 }
-
 
 select{
 	color: black;

@@ -4,30 +4,36 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-8">
+
+						<!--Box with toggle for forms-->
 						<div id='booking-box'>
 							<div class='col-xs-6 col-md-6'>
-							<div>
-								<a href class='display-form' ng-click='showCalc()'>Calculator
-								</a>
-								<p class="white">Use the calculator to get an idea of how much things are going to cost</p>
-							</div>
+								<div>
+									<a href class='display-form' ng-click='showCalc()'>Calculator
+									</a>
+									<p class="white">Use the calculator to get an idea of how much things are going to cost</p>
+								</div>
 							</div>
 							<div class='col-xs-6 col-md-6'>
 								<div>
-								<a href class="display-form" ng-click='showForm()'>Contact form
-								</a>
-								<p class='white'>Fill in our contact form and a memebr of our team will be in touch</p>
+									<a href class="display-form" ng-click='showForm()'>Contact form
+									</a>
+									<p class='white'>Fill in our contact form and a memebr of our team will be in touch</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
+				<!--Forms-->
 				<div id="calculator" class="animate" ng-show='visibleCalc'>
 					<calculator></calculator>	
 				</div>
 				<div id="contact-form" ng-show='visible'>
 					<contact></contact>							
 				</div>
+				
+				<!--Display message on completion of contact form-->
 				<div class="row">
 					<div class="col-md-8">
 						<div ng-controller='ContactCtrl' class="contact-message animate" ng-show='message'>

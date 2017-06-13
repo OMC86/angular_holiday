@@ -1,5 +1,7 @@
 angular.module('EmeraldApp', [
 	'ngRoute',
+	'angular-storage',
+	'ngAnimate'
 	])
 
 .config(function($locationProvider, $routeProvider){
