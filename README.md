@@ -8,11 +8,11 @@ This is a promotional web app for Emerald Travel Montserrat aimed at users who m
 
 ### What does it do?
 
-This app will give users infromation on the bespoke holiday package Emerald has on offer. Users will be able to join a mailing list and make selections on various holiday packages in order to receive an approximate price for a holiday.
+This app gives users infromation regarding the bespoke holiday package Emerald has on offer as well as general information about Montserrat. Users will be able to join a mailing list, submit a contact form and interact with a calculator which will provide an approximate price of a holiday based on thier selections.
 
 ### How does it work?
 
-This app will use javascript to make calculations based on selections made by the user in a form. The site is styled with bootstrap and uses Angular as the framework.
+This app uses javascript for form validation and logic. The site is styled with bootstrap and uses Angular as the framework.
 
 ## Features
 
