@@ -4,11 +4,11 @@ angular.module('EmeraldApp')
 
 		$scope.setInterval = 2000;
 		$scope.slides = [
-		{id: 0, image: '/assets/Mango-Falls-diner.jpg', caption: 'Open plan kitchen diner'},
-		{id: 1, image: '/assets/Mango-Falls-kitchen.jpg', caption: 'Kitchen bar'},
-		{id: 2, image: '/assets/Mango-Falls-terrace.jpg', caption: 'Ocean views from terrace'},
-		{id: 3, image: '/assets/Mango-Falls-pool.jpg', caption: 'Swimming pool'},
-		{id: 4, image: '/assets/Mango-Falls-steps.jpg', caption: 'Steps down to beach'}
+		{id: 0, image: 'assets/Mango-Falls-diner.jpg', caption: 'Open plan kitchen diner'},
+		{id: 1, image: 'assets/Mango-Falls-kitchen.jpg', caption: 'Kitchen bar'},
+		{id: 2, image: 'assets/Mango-Falls-terrace.jpg', caption: 'Ocean views from terrace'},
+		{id: 3, image: 'assets/Mango-Falls-pool.jpg', caption: 'Swimming pool'},
+		{id: 4, image: 'assets/Mango-Falls-steps.jpg', caption: 'Steps down to beach'}
 		];
 
 		$scope.currentIndex = 0;
