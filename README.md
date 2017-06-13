@@ -21,13 +21,15 @@ This app will use javascript to make calculations based on selections made by th
   - Interactive forms
     - claculator
     - contact form
+  - App based features
+    - Calculating the cost of a bespoke holiday.
+    - Display the cost on submittance of form.
+    - Crousel to display accomodation photos.
+    - Embedded youtube music videos.
 
 ### Features Left to Implement
 - User based features
 	- Register for mailing list
-- App based features
-	- Calculating the cost of a bespoke holiday.
-	- Display the cost on submittance of form.
 
 ## Tech Used
 
