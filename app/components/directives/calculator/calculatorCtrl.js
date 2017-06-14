@@ -22,8 +22,7 @@ angular.module('EmeraldApp')
 		$scope.accomodation = [
 			{id: 0, label: 'Select Accomodation', value: 0},
 			{id: 1, label: 'Shared Villa', value: 1000},
-			{id: 2, label: 'Private Villa', value: 4500},
-			{id: 3, label: 'Hotel', value: 1600}
+			{id: 2, label: 'Private Villa', value: 4500}
 			];
 		// Make id: 0 default value
 		$scope.selectedAccom = $scope.accomodation[0];
