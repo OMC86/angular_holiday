@@ -142,9 +142,11 @@
 			<!--Calculation = total-->
 			<div class="row">
 				<div class="col-md-12">
-					<div ng-model='total' id="bottom">
-						{{total | currency: '£'}}				
-					</div>	
+					<div ng-show='showAccom()'>
+						<div ng-model='total' id="bottom">
+							{{total | currency: '£'}}				
+						</div>	
+					</div>
 				</div>
 			</div>	
 		</form>
