@@ -19,7 +19,7 @@ angular.module('EmeraldApp')
 		$scope.selectedAirport = $scope.airports[0];
 
 		// Accomodation JSON
-		$scope.accomodation = [
+		$scope.accommodation = [
 			{id: 0, label: 'Select Accomodation', value: 0},
 			{id: 1, label: 'Shared Villa', value: 1000},
 			{id: 2, label: 'Private Villa', value: 4500}

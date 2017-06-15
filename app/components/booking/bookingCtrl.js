@@ -1,6 +1,8 @@
 angular.module('EmeraldApp')
 
 	.controller('BookingCtrl', ['$scope', function($scope) {
+
+		// Show and hide forms
 		
 		$scope.visible = false;
 		$scope.visibleCalc = false;
