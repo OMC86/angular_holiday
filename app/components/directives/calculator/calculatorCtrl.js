@@ -25,7 +25,7 @@ angular.module('EmeraldApp')
 			{id: 2, label: 'Private Villa', value: 4500}
 			];
 		// Make id: 0 default value
-		$scope.selectedAccom = $scope.accomodation[0];
+		$scope.selectedAccom = $scope.accommodation[0];
 
 		// Board JSON
 		$scope.board = [
