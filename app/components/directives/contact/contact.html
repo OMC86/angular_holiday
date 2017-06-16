@@ -1,7 +1,7 @@
 
     <div class="row">
         <div class="col-md-8 ">
-            <form class='form-general animate' name="contactForm" data-ng-submit='submitForm()' ng-show='visible' novalidate>  
+            <form class='form-general animate' id=contact-form name="contactForm" data-ng-submit='submitForm()' ng-show='visible' novalidate>  
                 <div class="form-group">
                     <h3 class='no-margin pad'>Contact Form</h3>
                      <p class="no-margin">Fill in the contact form and a member of our team will be in touch as soon as possible. If you're unsure about what to put in the message field, here you can write any questions you have or let us know what you would like to talk about specifically when we call. This will help our team find answers for you without wasting your time.</p>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                         
-                    <input type="submit" id='submit-button' data-ng-disabled='contactForm.$invalid'>
+                    <button type="submit" class="btn btn-success" data-ng-disabled='contactForm.$invalid'>Submit Form</button>
                 </div>
             </form>
         </div>

@@ -5,13 +5,13 @@
 		<form class="form-general" name='calculator' novalidate>
 			<div class="row">
 				<div class="col-md-12">		
-					<h3 class="no-margin pad">Claculator
+					<h3 class="no-margin pad">Calculator
 					</h3>
 				</div>
 			</div>
 			<div class='row'>
 				<div class="col-md-12">
-					<p class='no-margin'>Please select the options that apply to you to recieve an estimate on the final cost of your trip. 
+					<p class='no-margin'>Please select the options that apply to you to receive an estimate on the final cost of your trip. 
 					</p>
 				</div>
 			</div>
@@ -30,7 +30,7 @@
 						</p>
 						<label for="airport">Select nearest airport:
 						</label><br>
-						<div class="col-md-offset-1">
+						<div class="col-xs-offset-1 col-md-offset-1">
 							<select id='airport' ng-change='getTotal(); showPass();' ng-options="x.label group by x.country for x in airports" ng-model='selectedAirport' required>	
 						</select>
 					</div>
@@ -47,7 +47,7 @@
 							<label for="passengers">Number of passengers:
 							</label>
 							<div class="row">
-								<div class='col-md-2 col-md-offset-1'>
+								<div class='col-xs-3 col-md-2 col-xs-offset-1 col-md-offset-1'>
 									<input type="number" min='1' max='10' id="passengers" name="passengers" class="form-control" ng-init='passengers=1' ng-change='getTotal()' ng-model=passengers>
 								</div>
 							</div>
@@ -62,7 +62,7 @@
 					<div class="col-md-12">
 						<div class="form-group">
 							<label>Passenger class:</label><br>
-							<div class='col-md-offset-1' id='radio-pos'>
+							<div class='col-xs-offset-1 col-md-offset-1' id='radio-pos'>
 								<label>First Class:
 									<input type='radio' ng-model='selectedClass' ng-click='getTotal(); showAccom();' value='first'>
 								</label><br>
@@ -85,7 +85,7 @@
 			<div ng-show='showAccom()' class="animate">
 				<div class="row">
 					<div class="col-md-12">
-						<h4 class='pad'>Accomodation
+						<h4 class='pad'>Accommodation
 						</h4>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 							<label for="bed">Number of bedrooms:
 							</label>
 							<div class="row">
-								<div class="col-md-2 col-md-offset-1">
+								<div class="col-xs-3 col-md-2 col-xs-offset-1 col-md-offset-1">
 									<input type="number" min='1' max='10' id='bed' name="bedrooms" class="form-control" ng-change='getTotal()' ng-init='bedrooms=1' ng-model=bedrooms>
 								</div>
 							</div>
@@ -110,9 +110,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
-							<label for="accom">Accomodation type</label><br>
-							<div class="col-md-offset-1">
-								<select id='accom' ng-change='getTotal(); showBoard();' ng-options='x.label for x in accomodation' ng-model='selectedAccom'>			
+							<label for="accom">Accommodation type</label><br>
+							<div class="col-xs-offset-1 col-md-offset-1">
+								<select id='accom' ng-change='getTotal(); showBoard();' ng-options='x.label for x in accommodation' ng-model='selectedAccom'>			
 								</select>
 							</div>
 						</div>
@@ -128,9 +128,9 @@
 							<p class="no-margin">When it comes to how you want to eat on the island you have three options to choose from:<br><br>
 							1. Breakfast included<br>
 							2. Half board (breakfast and dinner included)<br>
-							3. Self catering (No food or drink inluded)</p>
+							3. Self catering (No food or drink included)</p>
 							<label for="group">Board option:</label>
-							<div class="col-md-offset-1">
+							<div class="col-xs-offset-1 col-md-offset-1">
 								<select id='group' class="margin-bottom-25" ng-options='x.label for x in board' ng-change='getTotal()' ng-model='selectedBoard'>
 								</select>
 							</div>
@@ -142,9 +142,11 @@
 			<!--Calculation = total-->
 			<div class="row">
 				<div class="col-md-12">
-					<div ng-model='total' id="bottom">
-						{{total | currency: '£'}}				
-					</div>	
+					<div ng-show='showAccom()'>
+						<div ng-model='total' id="bottom">
+							{{total | currency: '£'}}				
+						</div>	
+					</div>
 				</div>
 			</div>	
 		</form>
