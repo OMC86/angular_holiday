@@ -39,7 +39,7 @@
                     <div ng-hide='contactForm.lastName.$pristine' class="animate">
                         <div class="form-group">
                             <label for='email'>Email:</label>
-                                <input type="email" id='email' name="email" class="form-control" data-ng-model=user.email required>
+                                <input type="email" id='email' autocomplete='on' name="email" class="form-control" data-ng-model='user.email' required>
                                 <p class="no-margin" ng-show="contactForm.email.$pristine" class="help-block">Email required</p>
                         </div>
                     </div>
@@ -47,7 +47,7 @@
                     <div ng-hide='contactForm.email.$pristine' class="animate">
                         <div class="form-group">
                             <label for="phone">Phone:</label>
-                            <input type="tel" id='phone' name="number" class="form-control" data-ng-model=user.number required>
+                            <input type="tel" autocomplete='on' id='phone' name="number" class="form-control" data-ng-model=user.number required>
                             <p class="no-margin" ng-show="contactForm.number.$pristine" class="help-block">Please enter a number we can easily reach you on</p>
                         </div>
                     </div>
