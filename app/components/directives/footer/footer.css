@@ -22,10 +22,14 @@
     width: 300px;
     height: 200px;
 }
-/*
+
+.fa{
+    padding: 10px;
+}
+
 .height{
     height: 250px;
-}*/
+}
 
 #name{
     padding-top: 5px;                 /*style footer text*/
@@ -46,6 +50,18 @@
     color: #9b9b9b;
 }
 
+.join{
+    margin-top: 5px;
+    float: right;
+}
+
+input.foot{
+    
+}
+
+label.foot{
+    padding-left: 35px;
+}
 
 @media screen and (min-width: 630px){
     #footer{
