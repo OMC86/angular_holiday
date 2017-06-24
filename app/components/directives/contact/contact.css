@@ -31,20 +31,6 @@ button{
 }
 
 /*fade animation for forms*/
-.animate.ng-hide-add{
-	-webkit-animation: 1s form-animate-hide;
-}
-
-@-webkit-keyframes form-animate-hide{
-	0%{
-		opacity: 0.8;
-	}
-	
-	100%{
-		opacity: 0;
-	}
-}
-
 .animate.ng-hide-remove{
 	-webkit-animation: 1s form-animate-show;
 }
