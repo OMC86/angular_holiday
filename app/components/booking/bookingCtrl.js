@@ -4,15 +4,21 @@ angular.module('EmeraldApp')
 
 		// Show and hide forms
 		
-		$scope.visible = false;
-		$scope.visibleCalc = false;
+		$scope.visible = 0;
+		$scope.visibleCalc = 0;
 
 		$scope.showForm = function(){
-			$scope.visible = $scope.visible ? false : true; 
+			$scope.visible = !$scope.visible; 
+			if($scope.visibleCalc = $scope.visibleCalc){
+				$scope.visibleCalc = !$scope.visibleCalc;
+			}
 		};
 
 		$scope.showCalc = function(){
-			$scope.visibleCalc = $scope.visibleCalc ? false : true; 
+			$scope.visibleCalc = !$scope.visibleCalc;
+			if($scope.visible = $scope.visible){
+				$scope.visible = !$scope.visible;
+			} 
 		};
 		
 	}]);

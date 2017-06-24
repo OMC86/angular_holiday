@@ -97,7 +97,7 @@
 }
 
 /*re-position box title*/
-@media(min-width: 489px){
+@media(min-width: 650px){
 	#home-image-container{
 		height: 500px;
 	}

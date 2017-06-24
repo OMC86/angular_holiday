@@ -1,6 +1,7 @@
 /*Style for text*/
 p{
 	font-family: 'Bangla MN', 'Belleza', sans-serif;
+	font-size: 16px;
 	margin-bottom: 50px;
 	margin-top: 25px;
 }
@@ -33,6 +34,20 @@ li > a:hover{
 	color: black;
 }
 
+#accordion{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.panel-title{
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
+	color: #fff;
+}
+
+.panel{
+	background: yellow;
+	background: -webkit-linear-gradient(140deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); 
+}
 
 .top-p{
 	margin-top: 50px;
