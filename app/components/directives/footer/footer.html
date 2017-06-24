@@ -19,7 +19,7 @@
                         <form id='footer-news' name="emailForm" data-ng-submit='submitEmail()' ng-show='emails' novalidate>
                             <div class="form-group">
                                 <label class='foot' for='email'>Join our mailing list for great deals<br> and exclusive offers</label>
-                                <input type="email" id='email' autocomplete='on' name="email" class="form-control foot" data-ng-model='user.email' placeholder='Enter your email' required>
+                                <input type="email" id='email' autocomplete='on' name="email" class="form-control foot" data-ng-model='user.email' placeholder='Enter your email' title="Your e-mail should follow the format user@domain." required>
                             </div>
                             <div>
                             <button type="submit" class="btn btn-success join" data-ng-disabled='emailForm.$invalid'>Join</button>
@@ -33,8 +33,8 @@
                         <ul class="title">Website By</ul>
                         <ul id="name">Chris_T</ul>
                         <ul class="foot"><span class="fa fa-envelope fa-lg"></span>Christoal@outlook.com</ul>
-                        <ul class="foot"><span class="fa fa-twitter fa-lg"></span> Chris_T888</ul>
-                        <ul class="foot"><span id='twitter' class="fa fa-github fa-lg"></span> OMC86</ul>
+                        <ul class="foot"><a href="https://twitter.com/Chris_T888"><span class="fa fa-twitter fa-lg"></span> Chris_T888</a></ul>
+                        <ul class="foot"><a href='https://github.com/OMC86'><span class="fa fa-github fa-lg"></span> OMC86</ul>
                     </div>
                     
                 </div>
