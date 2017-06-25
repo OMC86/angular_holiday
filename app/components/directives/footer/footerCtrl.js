@@ -10,6 +10,6 @@ angular.module('EmeraldApp')
 			$scope.emailed = !$scope.emailed;
 
 			$scope.message = 'You have successfuly joined our mailing list with the e-mail '
-			 + $scope.user.email + ". If this is incorrect please refresh the page and enter you're e-mail again.";
+			 + $scope.user.emailHome + ". If this is incorrect please refresh the page and enter you're e-mail again.";
 		}		
 	}]);  
