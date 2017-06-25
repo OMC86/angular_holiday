@@ -3,7 +3,7 @@ angular.module('EmeraldApp')
 	.controller('HomeCtrl', ['$scope', '$location', function($scope, $location){
 		
 
-		//Logic for tabs https://codepen.io/jasoncluck/pen/iDcbh
+		//I used this example to bulid the tabs on the home page https://codepen.io/jasoncluck/pen/iDcbh
 
 		$scope.tab = 1;
 

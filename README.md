@@ -22,14 +22,38 @@ This app uses javascript for form validation and logic. The site is styled with 
     - claculator
     - contact form
   - App based features
-    - Calculating the cost of a bespoke holiday.
-    - Display the cost on submittance of form.
-    - Crousel to display accomodation photos.
+    - Calculating the cost of a holiday.
+    - Display the cost as the user makes selections.
+    - Display a personal message on submittance of contact form.
+    - Form validation with message to help users who entered incorrect format.
+    - Register e-mail for mailing list.
+    - Carousel to display accomodation photos.
     - Embedded youtube music videos.
 
-### Features Left to Implement
-- User based features
-	- Register for mailing list
+
+## Structure
+
+### Root Directory
+- App
+  - Contains the app's routing, logic and templates.
+- Assets
+  - Contains images used on the site.
+- Bower-components
+  - Contains libraries and frameworks.
+- Javascript-testing
+  - Contains Jasmine tests.
+- Other files
+  - Index.html, Readme.md.
+
+### App Directory
+- App.js contains the routing and modules to be injected into controllers.
+- Components
+  - The components directory is organised in such a way that each individual page in the app has its own directory containing it's template.html, css file and controller. There is also a directory which houses all the directives.
+- Directives
+  - Each directive has it's own directory containing it's template, css, controller and directive file.
+- CSS
+  - There is a base css file in the components directory which houses common css used on each page. For example the same font and margins are used throught the site. 
+
 
 ## Tech Used
 

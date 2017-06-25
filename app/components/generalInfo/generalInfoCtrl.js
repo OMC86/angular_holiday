@@ -10,5 +10,7 @@ angular.module('EmeraldApp')
 			img: {path:'assets/mont-beach.jpg', name: 'black sand beach'}
 
 		};
+
+
 		
 	}]);
