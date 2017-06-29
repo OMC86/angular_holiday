@@ -34,19 +34,22 @@ li > a:hover{
 	color: black;
 }
 
-#accordion{
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-
 .panel-title{
 	font-family: 'Bangla MN', 'Belleza', sans-serif;
-	color: #fff;
 }
 
-.panel{
-	background: yellow;
-	background: -webkit-linear-gradient(140deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); 
+.panel-heading{
+	border-bottom: transparent;
+}
+
+.panel {
+	margin-top: 50px;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.get-child .panel{
+	border-bottom: transparent;
 }
 
 .top-p{
