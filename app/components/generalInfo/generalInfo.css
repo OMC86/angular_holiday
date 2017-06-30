@@ -27,3 +27,20 @@
     background-clip: padding-box;
 }
 
+#carefree{
+	padding: 20px;
+}
+
+.float{
+	width: 220px;
+	height: auto;
+	float: right;
+	padding: 0 0 25px 25px;
+	
+}
+
+#drink-container{
+	display: block;
+	vertical-align: top;
+	clear: left;
+}
