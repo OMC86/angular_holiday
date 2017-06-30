@@ -46,6 +46,10 @@ angular.module('EmeraldApp')
 		//call show message
 			$rootScope.$broadcast('showMessage')
 			
-		};			
+		};
+
+		$scope.exit = function(){
+			$scope.message = !$scope.message;
+		}			
 
 	}]);
