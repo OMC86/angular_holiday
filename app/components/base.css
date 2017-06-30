@@ -52,6 +52,10 @@ li > a:hover{
 	border-bottom: transparent;
 }
 
+.get-child .panel-body{
+	border-bottom: transparent;
+}
+
 .top-p{
 	margin-top: 50px;
 }
@@ -81,4 +85,27 @@ li > a:hover{
 .text-left{
 	text-align: left;
 }
+
+.snippet{
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	font-size: 21px;
+	display: block;
+	background: -webkit-linear-gradient(top,#fd0b58,#a32b68);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: -moz-linear-gradient(top,#fd0b58,#a32b68);
+	-moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    background: -o-linear-gradient(top,#fd0b58,#a32b68);
+	-o-background-clip: text;
+    -o-text-fill-color: transparent;
+    background: -ms-linear-gradient(top,#fd0b58,#a32b68);
+	-ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+}
+
+
 
