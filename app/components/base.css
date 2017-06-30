@@ -34,25 +34,18 @@ li > a:hover{
 	color: black;
 }
 
-.panel-title{
-	font-family: 'Bangla MN', 'Belleza', sans-serif;
-}
-
 .panel-heading{
 	border-bottom: transparent;
 }
 
 .panel {
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
 	margin-top: 50px;
     border-left: transparent;
     border-right: transparent;
 }
 
 .get-child .panel{
-	border-bottom: transparent;
-}
-
-.get-child .panel-body{
 	border-bottom: transparent;
 }
 

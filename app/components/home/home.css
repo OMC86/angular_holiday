@@ -10,13 +10,20 @@
 /*background for tabs*/
 #trans-box{
 	height: 600px;
-	background-color: #4a4a4a;
-	opacity:0.8;
+	background-color: rgba(74,74,74, 0.8);
+	
 }
 
 /*white text*/
 .p-background{
 	color: #fff;
+}
+
+.big-btn{
+	height: 50px;
+	width:150px;
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
 /*discover montserrat and whats on offer boxes*/

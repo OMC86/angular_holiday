@@ -20,16 +20,16 @@
 								<div class="col-md-12">
 			  						<ul class="nav nav-tabs">
 				       					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(1) }">
-				          					<a href ng-click="setTab(1)">What We Offer</a>
+				          					<a href ng-click="setTab(1)">How it Works</a>
 				       					</li>
 								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(2) }">
-								          	<a href ng-click="setTab(2)">Who We Are</a>
+								          	<a href ng-click="setTab(2)">What We Offer</a>
 								       	</li>
 								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(3) }">
-								          	<a href ng-click="setTab(3)">Why Choose Us</a>
+								          	<a href ng-click="setTab(3)">Who We Are</a>
 								       	</li>
 								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(4) }">
-							          		<a href ng-click="setTab(4)">How it Works</a>
+							          		<a href ng-click="setTab(4)">Why Choos Us</a>
 							       		</li>
 									</ul>
 								</div>
@@ -38,7 +38,16 @@
 
 				    			<div class="col-md-8 col-md-offset-2">
 				  					<div>
-				       					<div class='p-background' ng-show="isSet(1)">
+				  						<div class='p-background centred-p' ng-show="isSet(1)">
+				  						<p>Book now to talk with our team directly!</p>
+
+						          		<a href='booking'><button class="btn btn-success big-btn">Book Now</button></a>
+
+						          		<p>It takes less than a minute to get a quote for your holiday with our holiday calculator!</p>
+
+						          		<a href='booking'><button class="btn btn-warning big-btn">Get a Quote</button></a>
+				     					</div>
+				       					<div class='p-background' ng-show="isSet(2)">
 								          	<p>10 day inclusive Caribbean experience in Montserrat during the St.Patricks day
 				 							celebrations. </p>
 				 							<p>Panoramic ocean view villas, ensuite bathrooms, swimming pool and beach access.</p>
@@ -48,7 +57,7 @@
 				 							</p>
 								        </div>
 
-										<div class='p-background' ng-show="isSet(2)">
+										<div class='p-background' ng-show="isSet(3)">
 								      
 								        	<p>Rochelle Lee, founder of Emerald Travel is a British born Montserratian  descendant</p>
 								        	<p>Having lived and worked in Monserrat, Rochelle has built strong relationships with the locals and has a wonderful knowledge of what the island has to offer</p>
@@ -56,25 +65,13 @@
 								        	</p>
 				     					</div>
 
-				        				<div class='p-background' ng-show="isSet(3)">
+				        				<div class='p-background' ng-show="isSet(4)">
 				          		
 					          				<p>We are offering a unique experience in the Caribbean travel market away from big resorts and tourist traps.</p>
 					          				<P>Our holidays are tailored to make sure you get to experience all the Island has to offer, without needing to worry about any of the complexities that come with organising a trip like this and all at an affordable price.</P>
 											<p>You can do as much or as little as you like. Group activities are not compulsory and we can help you organise your own private trips.
 											ATOL bonded flight booking.</p>
 					     				</div>
-
-				     					<div class='p-background' ng-show="isSet(4)">
-				          				
-						          			<p>Step one:<br>
-											Take a look at <a href='inclusive'>what's on offer.</a>
-											</p>
-											<p>Step two:<br>
-											Use our calculator to <a href='booking'>get a quote</a>
-											</p>
-											<p>Step three:<br>
-											To book or for further enquiries please submit the <a href='booking'>contact form</a> and a member of our team will get in touch as soon as possible.</p>
-				     					</div>
 				  					</div>
 				  				</div>
 							</div>
@@ -88,16 +85,14 @@
 
 <!--Intro-->
 <div class='container'>
-	<div class='row'>
-		<div class='col-md-12'>
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<div class="panel-title centred-p">
-						<h2>Experience St. Patrick's Montserratian Style...
-						</h2>
-					</div>
+	<div class="panel panel-default">
+		<div class='row'>
+			<div class='col-md-12'>
+				<div class="centred-p">
+					<h2>Experience St. Patrick's Montserratian Style...
+					</h2>
 				</div>	
-				<div class="panel-body centred-p"> 
+				<div class="centred-p"> 
 					<div class="col-sm-8 col-lg-8 col-sm-offset-2 col-lg-offset-2">
 						<p>Montserrat is the only country in the world outside Ireland to honour St. Patrick’s with a public holiday. In fact, Montserrat takes it a step further and enjoys a whole week of St. Paddy celebrations. For an outstanding, hassle free, off the beaten path Caribbean experience, look no further than Emerald travel Montserrat.  
 						</p>
