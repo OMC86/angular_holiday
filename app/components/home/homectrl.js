@@ -21,5 +21,10 @@ angular.module('EmeraldApp')
 	    $scope.goTo= function(id){
 	    	$location.url(id);
 	    };
+
+
+	    $scope.openForm = function(){
+	    	$rootScope.$broadcast('openF');
+	    };
 		
   	}]);

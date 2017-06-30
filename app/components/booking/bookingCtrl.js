@@ -6,6 +6,7 @@ angular.module('EmeraldApp')
 		
 		$scope.visible = 0;
 		$scope.visibleCalc = 0;
+		
 
 		$scope.showForm = function(){
 			$scope.visible = !$scope.visible; 
@@ -18,7 +19,8 @@ angular.module('EmeraldApp')
 			$scope.visibleCalc = !$scope.visibleCalc;
 			if($scope.visible = $scope.visible){
 				$scope.visible = !$scope.visible;
-			} 
+			}
 		};
 		
 	}]);
+
