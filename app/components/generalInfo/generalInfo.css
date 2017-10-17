@@ -2,6 +2,8 @@
 #map-container{
 	width:100%;
 	height: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 #map{
@@ -9,7 +11,7 @@
 	margin: auto;	
 }
 
-#vocano-container{
+#volcano-container{
 	width: 100%;
 	height: auto;
 }
