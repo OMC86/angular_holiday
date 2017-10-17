@@ -28,16 +28,12 @@
 		<!-- Carousel for Mango falls-->
 	<div class="row">
 		<div class="col-md-12">
-			<div>
-				<h3>Mango Falls</h3>
-			</div>
+			<h3>Mango Falls</h3>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<div>
-				<accom-carousel ng-controller='MangoCtrl'></accom-carousel>
-			</div>
+			<accom-carousel ng-controller='MangoCtrl'></accom-carousel>
 		</div>
 	</div>
 	<div class='row'>
@@ -62,95 +58,92 @@
 	</div>
 
 		<!--Carousel for wing song-->
-		<hr>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="home-title left">
-					<h3>Wing-Song</h3>
-				</div>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="col-md-12">
-				<div>
-					<accom-carousel ng-controller='WingCtrl'></accom-carousel>
-				</div>
-			</div>
-		</div>
-		<div class='row'>
-			<div class="col-md-8 col-md-offset-2">
-				<div>
-					<ul class="list-style">
-						<li>
-							A really spectacular and very private home with amazing sea and mountain views.
-						</li>
-						<li>
-							Open plan living space and kitchen diner.
-						</li>
-						<li>
-							Wrap around veranda, with 6 steps to pool.
-						</li>
-						<li>
-							 Three bedrooms and baths (2 on main level, one lower level) have AC, gorgeous bathrooms.
-						</li>
-						<li>
-							Beautifully decorated, BBQ, WIFI, many extras
-						</li>
-
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<hr>
-		<div class="row">
-			<div class="col-md-12">
-				<div id='the-itinerary' class="home-title left">
-					<h2>Inclusive itinerary</h2>
-				</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="home-title left">
+				<h3>Wing-Song</h3>
 			</div>
 		</div>
 	</div>
 
-	<div class='container-fluid'>	
-		<div class="row">		
+	<div class="row">
+		<div class="col-md-12">
+			<accom-carousel ng-controller='WingCtrl'></accom-carousel>		
+		</div>
+	</div>
+	<div class='row'>
+		<div class="col-md-8 col-md-offset-2">
 			<div>
-				<img src='assets/mont-masks.jpg' alt='masquerade'/>
-			</div>			
+				<ul class="list-style">
+					<li>
+						A really spectacular and very private home with amazing sea and mountain views.
+					</li>
+					<li>
+						Open plan living space and kitchen diner.
+					</li>
+					<li>
+						Wrap around veranda, with 6 steps to pool.
+					</li>
+					<li>
+						 Three bedrooms and baths (2 on main level, one lower level) have AC, gorgeous bathrooms.
+					</li>
+					<li>
+						Beautifully decorated, BBQ, WIFI, many extras
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 
-	<!-- Title and title image for itinerary-->
-	<div class=container>
-		<hr>
-		<div class="row">
-			<div class="col-md-12">
-				<div class="home-title">
-					<h2 class="top-p">St. Patricks week with Emerald Travel Montserrat</h2>
-				</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<div id='the-itinerary' class="home-title left">
+				<h2>Inclusive itinerary</h2>
 			</div>
 		</div>
-		<div class='row'>
-			<div class="col-md-8 col-md-offset-2">
-				<div>
-					<p>Emerald travel has curated a fantastic itinerary of events and excursions for guests to enjoy while holidaying with us.
+	</div>
+</div>
 
-					We have curated this option to ensure you will not miss out on anything during the St. Patricks celebrations and to save you the hassel of organising things yourself.
+<div class='container-fluid'>	
+	<div class="row">		
+		<div>
+			<img src='assets/mont-masks.jpg' alt='masquerade'/>
+		</div>			
+	</div>
+</div>
 
-					These activities are not compulsory but are included in the price of the holiday. We are also happy to help you organise anything else you would like to do.
-					</p>
-				</div>
+<!-- Title and title image for itinerary-->
+<div class=container>
+	<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="home-title">
+				<h2 class="top-p">St. Patricks week with Emerald Travel Montserrat</h2>
 			</div>
 		</div>
-		
-		<div class="row">
-			<div class="col-md-12">
-				<div class="itinerary-top">
+	</div>
+	<div class='row'>
+		<div class="col-md-8 col-md-offset-2">
+			<div>
+				<p>Emerald travel has curated a fantastic itinerary of events and excursions for guests to enjoy while holidaying with us.
+
+				We have curated this option to ensure you will not miss out on anything during the St. Patricks celebrations and to save you the hassel of organising things yourself.
+
+				These activities are not compulsory but are included in the price of the holiday. We are also happy to help you organise anything else you would like to do.
+				</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="itinerary-top">
 				<ul class="nav nav-tabs itin-tabs">
 				    <li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(1) }">
 				        <a href ng-click="setTab(1)">March 10th</a>
-				    </li>
+					</li>
 					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(2) }">
 				      	<a href ng-click="setTab(2)">March 11th</a>
 			       	</li>
@@ -162,39 +155,39 @@
 					</li>
 				</ul>
 			</div>
-			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<ul class="nav nav-tabs itin-tabs">
-					<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(5) }">
-				         <a href ng-click="setTab(5)">March 14th</a>
-				    </li>
-					<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(6) }">
-				      	<a href ng-click="setTab(6)">March 15th</a>
-			       	</li>
-			     
-					<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(7) }">
-						<a href ng-click="setTab(7)">March 16th</a>
-					</li>
-					<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(8) }">
-						<a href ng-click="setTab(8)">March 17th</a>
-					</li>
-					<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(9) }">
-				        <a href ng-click="setTab(9)">March 18th</a>
-				    </li>
-				</ul>
-			</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav nav-tabs itin-tabs">
+				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(5) }">
+			        <a href ng-click="setTab(5)">March 14th</a>
+				</li>
+				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(6) }">
+			      	<a href ng-click="setTab(6)">March 15th</a>
+			    </li>
+			 
+				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(7) }">
+					<a href ng-click="setTab(7)">March 16th</a>
+				</li>
+				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(8) }">
+					<a href ng-click="setTab(8)">March 17th</a>
+				</li>
+				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(9) }">
+			        <a href ng-click="setTab(9)">March 18th</a>
+				</li>
+			</ul>
 		</div>
-		<div class="col-md-8 col-md-offset-2">
-			<div id=schedule>
-				<div ng-show="isSet(1)">
-				  	<p>Montserrat Island tour with stop for shop at little bay market</p>
-				  	<p> Bring beach wear for a sea dip at little bay</p>
-				  	<p>Opening Ceremony – Heritage Village, Salem – 7PM (Feature Alliouagana Singers from the UK, Irish and BVI groups)</p>
-				  	<p> Rhythm Night – Salem Centre, 8PM (Drums, masquerade, string band from Nevis) – Street Dance by Miger’s Bar</p>
-				</div>
-				<div ng-show="isSet(2)">
+	</div>
+	<div class="col-md-8 col-md-offset-2">
+		<div id=schedule>
+			<div ng-show="isSet(1)">
+				<p>Montserrat Island tour with stop for shop at little bay market</p>
+			  	<p> Bring beach wear for a sea dip at little bay</p>
+			  	<p>Opening Ceremony – Heritage Village, Salem – 7PM (Feature Alliouagana Singers from the UK, Irish and BVI groups)</p>
+			  	<p> Rhythm Night – Salem Centre, 8PM (Drums, masquerade, string band from Nevis) – Street Dance by Miger’s Bar</p>
+			</div>
+			<div ng-show="isSet(2)">
 				  	<p>Volcano tour - visit the observatory and speak to volcanologists</p>
 				  	<p>St.Patrick’s Hike – Scriber’s Adventure Tours</p>
 				  	<p>Breakfast in Salem</p>
