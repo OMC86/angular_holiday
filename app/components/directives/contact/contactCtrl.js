@@ -17,14 +17,14 @@ angular.module('EmeraldApp')
 		$scope.userInfo = {};
 
 
-		//Once form is submitted get user info and display validation message
+		//Once form is submitted get user info and display message
 		$rootScope.$on('showMessage', function(){
 		var title = store.get('title');
 		var lastName = store.get('lastName');
 		var subject = store.get('subject');
 
 		if(title){
-			$scope.validation = 'Thank you ' + title + '.' + lastName + '. A memeber of our team will be in touch shortly to discuss ' + subject + '.';
+			$scope.validation = 'Thank you ' + title + lastName + '. A memeber of our team will be in touch shortly to discuss ' + subject + '.';
 			$scope.message = !$scope.message;
 		}
 	});

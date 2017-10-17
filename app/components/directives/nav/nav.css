@@ -1,0 +1,19 @@
+
+.navbar-inverse .navbar-nav > li > a{
+	color: #fff;
+	text-align: center;
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
+	padding-top: 25px;
+}
+
+.navbar-header > a.navbar-brand{
+	color: #fff;
+	font-size: 21px;
+	text-align: center;
+	font-family: 'Bangla MN', 'Belleza', sans-serif;
+	padding-top: 25px;
+}
+
+nav.navbar.navbar-inverse.navbar-fixed-top{
+	background-color: #4a4a4a;
+}

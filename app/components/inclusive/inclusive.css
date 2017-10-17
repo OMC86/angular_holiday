@@ -1,5 +1,20 @@
 .list-style{
 	font-family: 'Bangla MN', 'Belleza', sans-serif;
-	margin-bottom: 50px;
-	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
+
+
+.itin-tabs > li > a{
+	color: #000;
+	border-bottom: none; 
+	margin: 25px 0 25px 0;
+}
+
+#schedule{
+	 margin: 50px;
+}
+
+.itinerary-top > .nav-tabs{
+	border-bottom: none; 
 }

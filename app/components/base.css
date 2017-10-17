@@ -2,8 +2,6 @@
 p{
 	font-family: 'Bangla MN', 'Belleza', sans-serif;
 	font-size: 16px;
-	margin-bottom: 50px;
-	margin-top: 25px;
 }
 
 /*fit images inside containers*/
@@ -34,27 +32,9 @@ li > a:hover{
 	color: black;
 }
 
-.panel-heading{
-	border-bottom: transparent;
-}
 
-.panel {
+h2, h3, h4 {
 	font-family: 'Bangla MN', 'Belleza', sans-serif;
-	margin-top: 50px;
-    border-left: transparent;
-    border-right: transparent;
-}
-
-.get-child .panel{
-	border-bottom: transparent;
-}
-
-.top-p{
-	margin-top: 50px;
-}
-
-.bottom-p{
-	margin-bottom: 100px;
 }
 
 
@@ -100,5 +80,8 @@ li > a:hover{
     -ms-text-fill-color: transparent;
 }
 
-
-
+span.snippet{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 200px;
+}
