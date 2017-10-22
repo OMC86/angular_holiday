@@ -4,19 +4,23 @@
             <div class="cos-sm-12 col-lg-12">
                 <div id="flex-container">
                     <div class="flex-item">
-                        <ul class="title">Emerald Travel Montserrat</ul>
-                        <ul class="foot"><a href="about">About</a></ul>
-                        <ul class="foot"><a href=".">Home</a></ul>
-                        <ul class="foot"><a href="booking">Bookings</a></ul>
+                        <ul>
+                            <li class="title">Emerald Travel Montserrat</li>
+                            <li class="foot"><a href="about">About</a></li>
+                            <li class="foot"><a href=".">Home</a></li>
+                            <li class="foot"><a href="booking">Bookings</a></li>
+                        </ul>
                     </div>
                     <div class="flex-item">
-                        <ul class="title">Contact Emerald Travel</ul>
-                        <ul class="foot"><a href='booking'><span class="fa fa-envelope fa-lg"></span>Contact us</a></ul>
-                        <ul class="foot"><span class="fa fa-phone fa-lg"></span> (+44) 020-8759-321</ul>
+                        <ul>
+                            <li class="title">Contact Emerald Travel</li>
+                            <li class="foot"><a href='booking'><span class="fa fa-envelope fa-lg"></span>Contact us</a></li>
+                            <li class="foot"><a href="#"><span aria-label='contact number' class="fa fa-phone fa-lg"></span> (+44) 020-8759-321</a></li>
+                        </ul>
                     </div>
                     <div class="flex-item">
                         <ul class="title">Newsletter</ul>
-                        <form id='footer-news' name="emailForm" data-ng-submit='submitEmail()' ng-show='emails' novalidate>
+                        <form id='footer-news' name="emailForm" data-ng-submit='submitEmail()' data-ng-show='emails' novalidate>
                             <div class="form-group">
                                 <label class='foot' for='email'>Join our mailing list for great deals<br> and exclusive offers</label>
                                 <input type="email" id='email' autocomplete='on' name="email" class="form-control foot" data-ng-model='user.emailHome' placeholder='Enter your email' title="Your e-mail should follow the format user@domain." required>
@@ -25,18 +29,19 @@
                             <button type="submit" class="btn btn-success join" data-ng-disabled='emailForm.$invalid'>Join</button>
                             </div>
                         </form>
-                        <div ng-show='emailed' class="foot">
+                        <div data-ng-show='emailed' class="foot">
                             {{message}}
                         </div>        
                     </div>
                     <div class="flex-item height">
-                        <ul class="title">Website By</ul>
-                        <ul id="name">Chris_T</ul>
-                        <ul class="foot"><span class="fa fa-envelope fa-lg"></span>Christoal@outlook.com</ul>
-                        <ul class="foot"><a href="https://twitter.com/Chris_T888"><span class="fa fa-twitter fa-lg"></span> Chris_T888</a></ul>
-                        <ul class="foot"><a href='https://github.com/OMC86'><span class="fa fa-github fa-lg"></span> OMC86</ul>
-                    </div>
-                    
+                        <ul>
+                            <li class="title">Website By</li>
+                            <li id="name">Chris_T</li>
+                            <li class="foot"><a href="https://outlook.live.com"><span class="fa fa-envelope fa-lg"></span>Christoal@outlook.com</a></li>
+                            <li class="foot"><a href="https://twitter.com/Chris_T888"><span class="fa fa-twitter fa-lg"></span> Chris_T888</a></li>
+                            <li class="foot"><a href='https://github.com/OMC86'><span class="fa fa-github fa-lg"></span>OMC86</a></li>
+                        </ul>
+                    </div>  
                 </div>
             </div>
         </div>
