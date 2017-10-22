@@ -16,20 +16,20 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div id='trans-box'>
-							<div ng-cloak>
+							<div data-ng-cloak>
 								<div class="col-md-12">
 			  						<ul class="nav nav-tabs">
-				       					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(1) }">
-				          					<a href ng-click="setTab(1)">How it Works</a>
+				       					<li class='col-sm-3 col-lg-3' data-ng-class="{ active: isSet(1) }">
+				          					<a href data-ng-click="setTab(1)">How it Works</a>
 				       					</li>
-								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(2) }">
-								          	<a href ng-click="setTab(2)">What We Offer</a>
+								       	<li class='col-sm-3 col-lg-3' data-ng-class="{ active: isSet(2) }">
+								          	<a href data-ng-click="setTab(2)">What We Offer</a>
 								       	</li>
-								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(3) }">
-								          	<a href ng-click="setTab(3)">Who We Are</a>
+								       	<li class='col-sm-3 col-lg-3' data-ng-class="{ active: isSet(3) }">
+								          	<a href data-ng-click="setTab(3)">Who We Are</a>
 								       	</li>
-								       	<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(4) }">
-							          		<a href ng-click="setTab(4)">Why Choos Us</a>
+								       	<li class='col-sm-3 col-lg-3' data-ng-class="{ active: isSet(4) }">
+							          		<a href data-ng-click="setTab(4)">Why Choos Us</a>
 							       		</li>
 									</ul>
 								</div>
@@ -38,7 +38,7 @@
 
 				    			<div class="col-md-8 col-md-offset-2">
 				  					<div>
-				  						<div class='p-background centred-p' ng-show="isSet(1)">
+				  						<div class='p-background centred-p' data-ng-show="isSet(1)">
 				  						<p>To talk with a member of our team directly</p>
 
 						          		<a href='booking'><button class="btn btn-success big-btn">Contact us</button></a>
@@ -47,7 +47,7 @@
 
 						          		<a href='booking'><button class="btn btn-warning big-btn">Get a Quote</button></a>
 				     					</div>
-				       					<div class='p-background' ng-show="isSet(2)">
+				       					<div class='p-background' data-ng-show="isSet(2)">
 								          	<p>10 day inclusive Caribbean experience in Montserrat during the St.Patricks day
 				 							celebrations. </p>
 				 							<p>Panoramic ocean view villas, ensuite bathrooms, swimming pool and beach access.</p>
@@ -57,7 +57,7 @@
 				 							</p>
 								        </div>
 
-										<div class='p-background' ng-show="isSet(3)">
+										<div class='p-background' data-ng-show="isSet(3)">
 								      
 								        	<p>Rochelle Lee, founder of Emerald Travel is a British born Montserratian  descendant</p>
 								        	<p>Having lived and worked in Monserrat, Rochelle has built strong relationships with the locals and has a wonderful knowledge of what the island has to offer</p>
@@ -65,7 +65,7 @@
 								        	</p>
 				     					</div>
 
-				        				<div class='p-background' ng-show="isSet(4)">
+				        				<div class='p-background' data-ng-show="isSet(4)">
 				          		
 					          				<p>We are offering a unique experience in the Caribbean travel market away from big resorts and tourist traps.</p>
 					          				<P>Our holidays are tailored to make sure you get to experience all the Island has to offer, without needing to worry about any of the complexities that come with organising a trip like this and all at an affordable price.</P>
@@ -118,8 +118,8 @@
 	<div class="row">
 		<div class='col-xs-12 col-sm-4'>
 			<a href='general'>
-				<div id='box-one' class="box" title='volcano' ng-model='a' ng-mouseover=a=true ng-mouseleave='a=false'>
-					<div class='box-trans' ng-show='a'>
+				<div id='box-one' class="box" title='volcano' data-ng-model='a' data-ng-mouseover=a=true data-ng-mouseleave='a=false'>
+					<div class='box-trans' data-ng-show='a'>
 						<p>A closer look at Montserrat;
 						The island, the people, the 
 						volcano and the future.
@@ -136,9 +136,9 @@
 	
 		<!--link to general page history section-->
 		<div class='col-xs-12 col-sm-4'>
-			<a href='' ng-click="goTo('general#the-history')">
-				<div id='box-two' class="box" title='St. Patrick' ng-model='b' ng-mouseover=b=true ng-mouseleave='b=false'>
-					<div class='box-trans' ng-show='b'>
+			<a href='' data-ng-click="goTo('general#the-history')">
+				<div id='box-two' class="box" title='St. Patrick' data-ng-model='b' data-ng-mouseover=b=true data-ng-mouseleave='b=false'>
+					<div class='box-trans' data-ng-show='b'>
 						<p>Delve into the history of the
 						island and discover how 
 						St. Patricks became a public 
@@ -156,9 +156,9 @@
 
 		<!--link to general page celebration section-->
 		<div class='col-xs-12 col-sm-4'>
-			<a href='' ng-click="goTo('general#the-celebrations')">
-				<div id='box-three' class="box" ng-model='c' ng-mouseover=c=true ng-mouseleave='c=false'>
-					<div class='box-trans' ng-show='c'>
+			<a href='' data-ng-click="goTo('general#the-celebrations')">
+				<div id='box-three' class="box" data-ng-model='c' data-ng-mouseover=c=true data-ng-mouseleave='c=false'>
+					<div class='box-trans' data-ng-show='c'>
 						<p>A look at how Montserratians
 						celebrate this joyous day.
 						</p> 
@@ -187,7 +187,7 @@
 	<div class="row">
 		<div class='col-xs-12 col-sm-4'>
 			<a href='inclusive'>
-				<div id='box-four' class="box" ng-model='d' ng-mouseover=d=true ng-mouseleave='d=false'>
+				<div id='box-four' class="box" data-ng-model='d' data-ng-mouseover=d=true data-ng-mouseleave='d=false'>
 					<div class='box-trans' ng-show='d'>
 						<p>Luxurious villa, ocean views
 							and a gorgeous swimming pool.
@@ -205,8 +205,8 @@
 	<!--link to activities page-->
 		<div class='col-xs-12 col-sm-4'>
 			<a href='activities'>
-				<div id='box-five' class="box" ng-model='e' ng-mouseover=e=true ng-mouseleave='e=false'>
-					<div class='box-trans' ng-show='e'>
+				<div id='box-five' class="box" data-ng-model='e' data-ng-mouseover=e=true data-ng-mouseleave='e=false'>
+					<div class='box-trans' data-ng-show='e'>
 						<p>From spear fishing to
 						nature treks. Have a look at all
 						the island has to offer.
@@ -224,8 +224,8 @@
 		<!--link to general page history section-->
 		<div class='col-xs-12 col-sm-4'>
 			<a href='' ng-click="goTo('inclusive#the-itinerary')">
-				<div id='box-six' class="box" ng-model='f' ng-mouseover=f=true ng-mouseleave='f=false'>
-					<div class='box-trans' ng-show='f'>
+				<div id='box-six' class="box" data-ng-model='f' data-ng-mouseover=f=true data-ng-mouseleave='f=false'>
+					<div class='box-trans' data-ng-show='f'>
 						<p>The itinerary you can follow if
 							you so choose. All activities
 							are included in the price.
