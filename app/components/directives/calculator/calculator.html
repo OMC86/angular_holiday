@@ -31,7 +31,7 @@
 						<label for="airport">Select nearest airport:
 						</label><br>
 						<div class="col-xs-offset-1 col-md-offset-1">
-							<select id='airport' ng-change='getTotal(); showPass();' ng-options="x.label group by x.country for x in airports" ng-model='selectedAirport' required>	
+							<select id='airport' data-ng-change='getTotal(); showPass();' data-ng-options="x.label group by x.country for x in airports" data-ng-model='selectedAirport' required>	
 						</select>
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 							</label>
 							<div class="row">
 								<div class='col-xs-3 col-md-2 col-xs-offset-1 col-md-offset-1'>
-									<input type="number" min='1' max='10' id="passengers" name="passengers" class="form-control" ng-init='passengers=1' ng-change='getTotal()' ng-model=passengers>
+									<input type="number" min='1' max='10' id="passengers" name="passengers" class="form-control" data-ng-init='passengers=1' data-ng-change='getTotal()' data-ng-model=passengers>
 								</div>
 							</div>
 						</div>
@@ -64,16 +64,16 @@
 							<label>Passenger class:</label><br>
 							<div class='col-xs-offset-1 col-md-offset-1' id='radio-pos'>
 								<label>First Class:
-									<input type='radio' ng-model='selectedClass' ng-click='getTotal(); showAccom();' value='first'>
+									<input type='radio' data-ng-model='selectedClass' data-ng-click='getTotal(); showAccom();' value='first'>
 								</label><br>
 								<label>Business Class:
-									<input type='radio' ng-model='selectedClass' ng-click='getTotal(); showAccom();' value='second'>
+									<input type='radio' data-ng-model='selectedClass' data-ng-click='getTotal(); showAccom();' value='second'>
 								</label><br>
 								<label>Premium economy:
-									<input type='radio' ng-model='selectedClass' ng-click='getTotal(); showAccom();' value='third'><br>
+									<input type='radio' data-ng-model='selectedClass' data-ng-click='getTotal(); showAccom();' value='third'><br>
 								</label><br>
 								<label>Economy:
-									<input type='radio' ng-model='selectedClass' ng-click='getTotal(); showAccom();' value='fourth'>
+									<input type='radio' data-ng-model='selectedClass' data-ng-click='getTotal(); showAccom();' value='fourth'>
 								</label>
 							</div>
 						</div>
@@ -82,7 +82,7 @@
 			</div>
 
 			<!--Select 	Accomodation-->	
-			<div ng-show='showAccom()' class="animate">
+			<div data-ng-show='showAccom()' class="animate">
 				<div class="row">
 					<div class="col-md-12">
 						<h4 class='pad'>Accommodation
@@ -98,7 +98,7 @@
 							</label>
 							<div class="row">
 								<div class="col-xs-3 col-md-2 col-xs-offset-1 col-md-offset-1">
-									<input type="number" min='1' max='10' id='bed' name="bedrooms" class="form-control" ng-change='getTotal()' ng-init='bedrooms=1' ng-model=bedrooms>
+									<input type="number" min='1' max='10' id='bed' name="bedrooms" class="form-control" data-ng-change='getTotal()' data-ng-init='bedrooms=1' data-ng-model=bedrooms>
 								</div>
 							</div>
 						</div>
@@ -112,7 +112,7 @@
 						<div class="form-group">
 							<label for="accom">Accommodation type</label><br>
 							<div class="col-xs-offset-1 col-md-offset-1">
-								<select id='accom' ng-change='getTotal(); showBoard();' ng-options='x.label for x in accommodation' ng-model='selectedAccom'>			
+								<select id='accom' data-ng-change='getTotal(); showBoard();' data-ng-options='x.label for x in accommodation' data-ng-model='selectedAccom'>			
 								</select>
 							</div>
 						</div>
@@ -121,7 +121,7 @@
 			</div>
 
 			<!--Select board option (select menu)-->
-			<div ng-show='showBoard()' class="animate">
+			<div data-ng-show='showBoard()' class="animate">
 				<div class="row">
 					<div class="col-md-12">	
 						<div class="form-group">
@@ -131,7 +131,7 @@
 							3. Self catering (No food or drink included)</p>
 							<label for="group">Board option:</label>
 							<div class="col-xs-offset-1 col-md-offset-1">
-								<select id='group' class="margin-bottom-25" ng-options='x.label for x in board' ng-change='getTotal()' ng-model='selectedBoard'>
+								<select id='group' class="margin-bottom-25" data-ng-options='x.label for x in board' data-ng-change='getTotal()' data-ng-model='selectedBoard'>
 								</select>
 							</div>
 						</div>
@@ -142,8 +142,8 @@
 			<!--Calculation = total-->
 			<div class="row">
 				<div class="col-md-12">
-					<div ng-show='showAccom()'>
-						<div ng-model='total' id="bottom">
+					<div data-ng-show='showAccom()'>
+						<div data-ng-model='total' id="bottom">
 							{{total | currency: '£'}}				
 						</div>	
 					</div>

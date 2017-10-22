@@ -1,7 +1,7 @@
 
     <div class="row">
         <div class="col-md-8 ">
-            <form class='form-general animate' id=contact-form name="contactForm" data-ng-submit='submitForm()' ng-show='visible' novalidate>  
+            <form class='form-general animate' id=contact-form name="contactForm" data-ng-submit='submitForm()' data-ng-show='visible' novalidate>  
                 <div class="form-group">
                     <h3 class='no-margin pad'>Contact Form</h3>
                      <p class="no-margin">Fill in the contact form and a member of our team will be in touch as soon as possible. If you're unsure about what to put in the message field, here you can write any questions you have or let us know what you would like to talk about specifically when we call. This will help our team find answers for you without wasting your time.</p>
@@ -40,7 +40,7 @@
                         <div class="form-group">
                             <label for='email'>Email:</label>
                                 <input type="email" id='email' autocomplete='on' name="email" class="form-control" data-ng-model='user.email' title="Your e-mail should follow the format user@domain." required>
-                                <p class="no-margin" ng-show=" contactForm.email.$invalid" class="help-block">Email required</p>
+                                <p class="no-margin" data-ng-show=" contactForm.email.$invalid" class="help-block">Email required</p>
                         </div>
                     </div>
                     
@@ -48,21 +48,21 @@
                         <div class="form-group">
                             <label for="phone">Phone:</label>
                             <input type="tel" autocomplete='on' id='phone' name="number" class="form-control" pattern="[0-9]{8,}" data-ng-model=user.number title="Your number should contain at least 8 numbers and not include any special characters" required>
-                            <p class="no-margin" ng-show="contactForm.number.$pristine" class="help-block">Please enter a number we can easily reach you on</p>
+                            <p class="no-margin" data-ng-show="contactForm.number.$pristine" class="help-block">Please enter a number we can easily reach you on</p>
                         </div>
                     </div>
                     <div ng-hide='contactForm.number.$invalid' class="animate">
                         <div class="form-group">
                             <label for="subject">Subject:</label>
                             <input type="text" id="subject" name="subject" class="form-control" data-ng-model='user.subject' pattern='[A-Za-z\s]{2,}' title="The subject sould contain at least two characters" required>
-                            <p class="no-margin" ng-show="contactForm.subject.$invalid" class="help-block">Subject required</p>
+                            <p class="no-margin" data-ng-show="contactForm.subject.$invalid" class="help-block">Subject required</p>
                         </div>
                     </div>
                     <div ng-hide='contactForm.subject.$invalid' class="animate">
                         <div class="form-group">
                             <label for="message">Message:</label>
                             <textarea id='message' type="text" name="message" class="form-control" data-ng-model='user.message' pattern='[a-zA-Z\s]{10,}' tittle='Your message should contain at least 10 characters.' required></textarea>
-                            <p class="no-margin" ng-show='contactForm.message.$invalid' class="help-block">Please give us a brief description of what you would like to discuss.</p></textarea>
+                            <p class="no-margin" data-ng-show='contactForm.message.$invalid' class="help-block">Please give us a brief description of what you would like to discuss.</p></textarea>
                         </div>
                     </div>
                         

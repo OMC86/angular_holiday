@@ -63,6 +63,10 @@ label.foot{
     padding-left: 35px;
 }
 
+ul li{
+    list-style-type: none;
+}
+
 @media screen and (min-width: 630px){
     #footer{
         height: 500px;
