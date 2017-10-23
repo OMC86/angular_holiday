@@ -60,19 +60,22 @@ This app uses javascript for form validation and logic. The site is styled with 
 ### Some of the tech used includes:
 
 - [AngularJS](https://angularjs.org/)
-    - We use **AngularJS** to handle page routing, we also use it to build custom directives
+    - We use **AngularJS** to handle page routing, we also use it to build custom. directives
 - [Bootstrap](http://getbootstrap.com/)
-    - We use **Bootstrap** to give our project a simple, responsive layout
+    - We use **Bootstrap** to give our project a simple, responsive layout.
 - [npm](https://www.npmjs.com/)
-    - We use **npm** to help manage some of the dependencies in our application
+    - We use **npm** to help manage some of the dependencies in our application.
 - [bower](https://bower.io/)
-    - **Bower** is used to manage the installation of our libraries and frameworks
+    - **Bower** is used to manage the installation of our libraries and frameworks.
+- [Jasmine](https://jasmine.github.io/)
+    - **Jasmine** is used to test javascript code.
+
 
 ## Contributing
 
 ### Getting the code up and running
 
-1. Firstly you will need to clone this repository by running the ```git clone <project's Github URL>``` command
+1. Firstly you will need to clone this repository by running the ```git clone https://github.com/OMC86/angular_holiday``` command
 2. After that you'll need to make sure that you have **npm** and **bower** installed
   1. You can get **npm** by installing Node from [here](https://nodejs.org/en/)
   2. Once you've done this you'll need to run the following command:
