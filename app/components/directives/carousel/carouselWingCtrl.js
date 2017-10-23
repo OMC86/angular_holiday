@@ -1,3 +1,5 @@
+// To build the carousel I used this tutorial http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/
+
 angular.module('EmeraldApp')
 
 	.controller('WingCtrl', ['$scope', function($scope){

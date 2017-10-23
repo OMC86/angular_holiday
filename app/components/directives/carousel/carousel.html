@@ -1,3 +1,5 @@
+<!--// To build the carousel I used this tutorial http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/-->
+
 <div id='slide-container'>
 	<img data-ng-repeat='x in slides' class='slide' data-ng-hide='!isCurrentIndex($index)' data-ng-src='{{x.image}}'>
 	<a class="arrow prev" href="" data-ng-click="nextSlide()"><span class='glyphicon glyphicon-menu-left icon'></span></a>
