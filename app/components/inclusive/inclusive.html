@@ -33,7 +33,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12">
-			<accom-carousel ng-controller='MangoCtrl'></accom-carousel>
+			<accom-carousel data-ng-controller='MangoCtrl'></accom-carousel>
 		</div>
 	</div>
 	<div class='row'>
@@ -69,7 +69,7 @@
 
 	<div class="row">
 		<div class="col-md-12">
-			<accom-carousel ng-controller='WingCtrl'></accom-carousel>		
+			<accom-carousel data-ng-controller='WingCtrl'></accom-carousel>		
 		</div>
 	</div>
 	<div class='row'>
@@ -120,7 +120,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<div class="home-title">
-				<h2 class="top-p">St. Patricks week with Emerald Travel Montserrat</h2>
+				<h2>St. Patricks week with Emerald Travel Montserrat</h2>
 			</div>
 		</div>
 	</div>
@@ -136,22 +136,22 @@
 			</div>
 		</div>
 	</div>
-	
+	<!--I used this example to bulid the tabs https://codepen.io/jasoncluck/pen/iDcbh-->
 	<div class="row">
 		<div class="col-md-12">
 			<div class="itinerary-top">
 				<ul class="nav nav-tabs itin-tabs">
 				    <li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(1) }">
-				        <a href ng-click="setTab(1)">March 10th</a>
+				        <a href data-ng-click="setTab(1)">March 10th</a>
 					</li>
 					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(2) }">
-				      	<a href ng-click="setTab(2)">March 11th</a>
+				      	<a href data-ng-click="setTab(2)">March 11th</a>
 			       	</li>
 					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(3) }">
-						<a href ng-click="setTab(3)">March 12th</a>
+						<a href data-ng-click="setTab(3)">March 12th</a>
 					</li>
 					<li class='col-sm-3 col-lg-3' ng-class="{ active: isSet(4) }">
-						<a href ng-click="setTab(4)">March 13th</a>
+						<a href data-ng-click="setTab(4)">March 13th</a>
 					</li>
 				</ul>
 			</div>
@@ -161,80 +161,80 @@
 		<div class="col-md-12">
 			<ul class="nav nav-tabs itin-tabs">
 				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(5) }">
-			        <a href ng-click="setTab(5)">March 14th</a>
+			        <a href data-ng-click="setTab(5)">March 14th</a>
 				</li>
 				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(6) }">
-			      	<a href ng-click="setTab(6)">March 15th</a>
+			      	<a href data-ng-click="setTab(6)">March 15th</a>
 			    </li>
 			 
 				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(7) }">
-					<a href ng-click="setTab(7)">March 16th</a>
+					<a href data-ng-click="setTab(7)">March 16th</a>
 				</li>
 				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(8) }">
-					<a href ng-click="setTab(8)">March 17th</a>
+					<a href data-ng-click="setTab(8)">March 17th</a>
 				</li>
 				<li class='col-sm-2 col-lg-2' ng-class="{ active: isSet(9) }">
-			        <a href ng-click="setTab(9)">March 18th</a>
+			        <a href data-ng-click="setTab(9)">March 18th</a>
 				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="col-md-8 col-md-offset-2">
 		<div id=schedule>
-			<div ng-show="isSet(1)">
+			<div data-ng-show="isSet(1)">
 				<p>Montserrat Island tour with stop for shop at little bay market</p>
 			  	<p> Bring beach wear for a sea dip at little bay</p>
 			  	<p>Opening Ceremony – Heritage Village, Salem – 7PM (Feature Alliouagana Singers from the UK, Irish and BVI groups)</p>
 			  	<p> Rhythm Night – Salem Centre, 8PM (Drums, masquerade, string band from Nevis) – Street Dance by Miger’s Bar</p>
 			</div>
-			<div ng-show="isSet(2)">
+			<div data-ng-show="isSet(2)">
 				  	<p>Volcano tour - visit the observatory and speak to volcanologists</p>
 				  	<p>St.Patrick’s Hike – Scriber’s Adventure Tours</p>
 				  	<p>Breakfast in Salem</p>
 				  	<p>T-20 Cricket – Local and Diaspora teams</p>
 				  	<p> St. Patrick’s Day Dinner – Cultural Centre - Nevis String Band Soca vs Dancehall</p>
 				</div>
-				<div ng-show="isSet(3)">
+				<div data-ng-show="isSet(3)">
 				  	<p>Spear and shoreline fishing. - Little Bay - Snorkeling equipment can be rented at an extra cost </p>
 				  	<p>National Church Service – Lookout Catholic Church – Wear National Dress</p> 
 				  	<p>Family Fun Day - Little Bay Field - (Music by local and visiting Iron Bands)</p>
 				  	<p> Madras Fashion Explosion, Moose’s Place, Little Bay </p>
 				  	<p> Jr Calypso< 18th Anniversary - Salem Park</p>
 				</div>
-				<div ng-show="isSet(4)">
+				<div data-ng-show="isSet(4)">
 				  	<p>Hike or Kayack to Rendevous Bay</p>
 				  	<p> Business Expo String Band Jam – Time Out Bar and Grill</p>
 				</div>
-				<div ng-show="isSet(5)">
+				<div data-ng-show="isSet(5)">
 				  	<p>Hike Centre Hills </p>
 				  	<p>Business Expo St Patrick’s Day Lecture - Cultural Centre</p>
 				  	<p> Madrastique Fashion Show National Trust - Salem </p>
 				  	<p> String Band Jam, Salem Centre</p>
 					</p>
 				</div>
-				<div ng-show="isSet(6)">
+				<div data-ng-show="isSet(6)">
 				  	<p>Rum shop tour - Children welcome</p>
 				  	<p> Miss St Patrick’s Cultural Pageant - Cultural Centre</p>
 				  	<p>Soca Dance Party - Moose’s Place</p>
 				</div>
-				<div ng-show="isSet(7)">
+				<div data-ng-show="isSet(7)">
 				  	<p>Volcano exclusion zone tour</p>
 					<p>National Awareness Day – Dress in National Wear and Colours</p>
 					<p>Arrow Tribute Regional Soca Monarch - Salem Park - (feat. Onyan, Three Cylinders)
 					</p>
 				</div>
-				<div ng-show="isSet(8)">
+				<div data-ng-show="isSet(8)">
 				  	<p>St. Patricks day Freedom Jump Up - 5AM Freedom Run & Walk (Cudjoe Head to MSS) </p>
 				  	<p>Breakfast - Salem Centre Heritage Feast </p>
 				  	<p>Noon Heritage Parade</p> 
 				  	<p> Cultural Show - Heritage Village Salem </p>
 				  	<p>Grand Raffle Announcement of BMW, Gold Rush feat. Jadine the Soca Diva, Destra, Salem Park</p>
 				</div>
-				<div ng-show="isSet(9)">
+				<div data-ng-show="isSet(9)">
 				  	<p>St. Patricks day Beach BBQ - Bunkum Bay </p>
 				  	<p> Alliougana Singers, Emerald Community Singers - Salem Old School</p>
 				</div>
-				<div ng-show="isSet(10)">
+				<div data-ng-show="isSet(10)">
 				  	<p>Ferry to Antigua - Little Bay port</p>
 				</div>
 			</div>

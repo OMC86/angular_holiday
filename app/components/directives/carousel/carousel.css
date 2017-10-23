@@ -1,3 +1,5 @@
+/* To build the carousel I used this tutorial http://onehungrymind.com/build-sweet-photo-slider-angularjs-animate/ */
+
 #slide-container{
 	width: 600px;
 	height: 300px;
@@ -119,21 +121,4 @@
     }
 }
 
-/*
-@media(min-width: 600px){
-    #slide-container{
-        height: 350px;
-    }
-}
-@media(min-width: 700px){
-    #slide-container{
-        height: 400px;
-    }
-}
-@media(min-width: 991px){
-    #slide-container{
-        height: 500px;
-    }
-    }
-}
 
