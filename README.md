@@ -8,7 +8,7 @@ This is a promotional web app for Emerald Travel Montserrat aimed at users who m
 
 ### What does it do?
 
-This app gives users infromation regarding the bespoke holiday package Emerald has on offer as well as general information about Montserrat. Users will be able to join a mailing list, submit a contact form and interact with a calculator which will provide an approximate price of a holiday based on thier selections.
+This app gives users information regarding the bespoke holiday package Emerald has on offer as well as general information about Montserrat. Users will be able to join a mailing list, submit a contact form and interact with a calculator which will provide an approximate price of a holiday based on thier selections.
 
 ### How does it work?
 
@@ -19,15 +19,15 @@ This app uses javascript for form validation and logic. The site is styled with 
 ### Existing Features
 - User based features
   - Interactive forms
-    - claculator
+    - calculator
     - contact form
   - App based features
     - Calculating the cost of a holiday.
     - Display the cost as the user makes selections.
-    - Display a personal message on submittance of contact form.
+    - Display a personal message contact form submit.
     - Form validation with message to help users who entered incorrect format.
     - Register e-mail for mailing list.
-    - Carousel to display accomodation photos.
+    - Carousel to display accommodation photos.
     - Embedded youtube music videos.
 
 
@@ -52,7 +52,7 @@ This app uses javascript for form validation and logic. The site is styled with 
 - Directives
   - Each directive has it's own directory containing it's template, css, controller and directive file.
 - CSS
-  - There is a base css file in the components directory which houses common css used on each page. For example the same font and margins are used throught the site. 
+  - There is a base css file in the components directory which houses common css used on each page. For example the same font and margins are used throughout the site. 
 
 
 ## Tech Used
