@@ -56,59 +56,71 @@ angular.module('EmeraldApp')
 
 
 		// Price of plane tickts * the number of passengers
-		function getTicketPrice(tix, pass){
-			var tickets = $scope.selectedAirport.value;
-			var pass = $scope.passengers;
-			var price = tickets * pass;
-			return price;
+		$scope.getTicketPrice = function(passengers, airport){
+			passengers = $scope.passengers
+			airport = $scope.selectedAirport.value
+			if(typeof($scope.selectedAirport.value, $scope.passengers) == "number"){
+				return $scope.price = airport * passengers
+			}else{
+				alert("Both arguments must be numbers");
+			}
 		};
 
 
 		// The price of flight class * number of passengers
-		function getStyle(){
-			var pass = $scope.passengers;
-
-			if($scope.selectedClass === 'first'){
-				return 1550 * pass;
-			}else if($scope.selectedClass === 'second'){
-				return 1000 * pass;
-			}else if($scope.selectedClass === 'third'){
-				return 550 * pass;
+		$scope.getStyle = function(passengers){
+			passengers = $scope.passengers;
+			if(typeof($scope.passengers) == "number"){
+				if($scope.selectedClass === 'first'){
+					return $scope.class = 1550 * passengers;
+				}else if($scope.selectedClass === 'second'){
+					return $scope.class = 1000 * passengers;
+				}else if($scope.selectedClass === 'third'){
+					return $scope.class = 550 * passengers;
+				}else{
+					return $scope.class = 0;
+				}
 			}else{
-				return 0;
+				alert("Argument must be a number");
 			}
 		}
 			
 		
 		// The price of accomodation
-		function getAccom(){
-			var bedroom = $scope.bedrooms;
-			var accomType = $scope.selectedAccom.value;
-			var id = $scope.selectedAccom.id;
-
-			if(id === 0){
-				return 0;
-			}else if(id === 1){
-				return accomType * bedroom;
-			}else if(id === 2){
-				return accomType;
-			}else if(id === 3){
-				return accomType * bedroom;
+		$scope.getAccom = function(bedroom, accomType, id){
+			bedroom = $scope.bedrooms;
+			accomType = $scope.selectedAccom.value;
+			id = $scope.selectedAccom.id;
+			if(typeof($scope.bedrooms, $scope.selectedAccom.value, $scope.selectedAccom.id) == "number"){
+				if(id === 0){
+					return 0;
+				}else if(id === 1){
+					return accomType * bedroom;
+				}else if(id === 2){
+					return accomType;
+				}else if(id === 3){
+					return accomType * bedroom;
+				}
+			}else{
+				alert('Arguments must be numbers')
 			}
 		}
 				
 
 		// The price of board options
-		function getBoard(){
-			var pass = $scope.passengers;
-			var boardVal = $scope.selectedBoard.value;
-
-			return boardVal * pass;
+		$scope.getBoard = function(pass, boardVal){
+			pass = $scope.passengers;
+			boardVal = $scope.selectedBoard.value;
+			if(typeof($scope.passengers, $scope.selectedBoard.value) == "number"){
+				return boardVal * pass;
+			}else{
+				alert('Arguments must be numbers')
+			}
 		}
 
 		// Find the sum of the holiday and turn to string for angular currency filter
 		$scope.getTotal = function(){
-			total = (getTicketPrice() + getStyle() + getAccom() + getBoard());
+			total = ($scope.getTicketPrice() + $scope.getStyle() + $scope.getAccom() + $scope.getBoard());
 			$scope.total = total.toString();
 
 		}
