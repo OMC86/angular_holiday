@@ -37,6 +37,6 @@ angular.module('EmeraldApp', [
 	.when('/booking', {
 		templateUrl: 'app/components/booking/booking.html',
 		controller: 'BookingCtrl'
-	})
+	});
 
-})
+});
