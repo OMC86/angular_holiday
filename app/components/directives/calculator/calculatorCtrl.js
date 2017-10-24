@@ -58,10 +58,10 @@ angular.module('EmeraldApp')
 
 		// Price of plane tickts * the number of passengers
 		$scope.getTicketPrice = function(passengers, airport){
-			passengers = $scope.passengers
-			airport = $scope.selectedAirport.value
+			passengers = $scope.passengers;
+			airport = $scope.selectedAirport.value;
 			if(typeof($scope.selectedAirport.value, $scope.passengers) == "number"){
-				return $scope.price = airport * passengers
+				return $scope.price = airport * passengers;
 			}else{
 				alert("Both arguments must be numbers");
 			}
@@ -84,7 +84,7 @@ angular.module('EmeraldApp')
 			}else{
 				alert("Argument must be a number");
 			}
-		}
+		};
 			
 		
 		// The price of accomodation
@@ -103,9 +103,9 @@ angular.module('EmeraldApp')
 					return accomType * bedroom;
 				}
 			}else{
-				alert('Arguments must be numbers')
+				alert('Arguments must be numbers');
 			}
-		}
+		};
 				
 
 		// The price of board options
@@ -115,21 +115,21 @@ angular.module('EmeraldApp')
 			if(typeof($scope.passengers, $scope.selectedBoard.value) == "number"){
 				return boardVal * pass;
 			}else{
-				alert('Arguments must be numbers')
+				alert('Arguments must be numbers');
 			}
-		}
+		};
 
 		// Find the sum of the holiday and turn to string for angular currency filter
 		$scope.getTotal = function(){
 			total = ($scope.getTicketPrice() + $scope.getStyle() + $scope.getAccom() + $scope.getBoard());
 			$scope.total = total.toString();
 
-		}
+		};
 
 		// Show number of passengers input once airport is selected
 		$scope.showPass = function(){
 			return $scope.selectedAirport !== 0;
-		}
+		};
 
 		// Show number of bedrooms and accom type once passenger class has been selected
 		$scope.showAccom = function(){
@@ -138,12 +138,12 @@ angular.module('EmeraldApp')
 			}else{
 				return 1;
 			}
-		}
+		};
 
 		// Show board options once accomodation type has been selected
 		$scope.showBoard = function(){
 			return $scope.selectedAccom.id !== 0;
-		}
+		};
 
 	
 	}]);

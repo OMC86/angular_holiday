@@ -44,12 +44,12 @@ angular.module('EmeraldApp')
 		//Hide contact form
 			$scope.visible = !$scope.visible;
 		//call show message
-			$rootScope.$broadcast('showMessage')
+			$rootScope.$broadcast('showMessage');
 			
 		};
 
 		$scope.exit = function(){
 			$scope.message = !$scope.message;
-		}			
+		};			
 
 	}]);
