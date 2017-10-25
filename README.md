@@ -71,6 +71,22 @@ This app uses javascript for form validation and logic. The site is styled with 
     - **Jasmine** is used to test javascript code.
 
 
+## Testing
+To test my calculator controller I used the Jasmine testing framework. To initiate the tests I used the example from the code institute lessons and created a file called calc.js in which I used Red-green-refactor to make sure the tests would both fail and pass.
+
+In the specRunner.html file I had to make sure I loaded all the files I needed in order to test my controller successfully. I [read here](https://docs.angularjs.org/guide/unit-testing) that I could use angular-mocks to 'inject and mock AngularJS services within unit tests'. When I first loaded specRunner.html in the browser I was getting errors such as 'angular is not defined' and 'mock' is not defined. By reading the errors provided by jasmine and looking in the javascript console I determined that my files were not loading correctly due to incorrect paths.
+
+Upon revisioning the order of my script tags and making sure the paths were leading to the intended directories I was able to start writing tests for my controller. I used [this](http://www.bradoncode.com/blog/2015/05/17/angularjs-testing-controller/) tutorial to get me started.
+
+Before each test I used angular mocks to load a new instance of 'EmeraldApp' and then used the 'inject' function to 'resolve a reference of the controller service'. The controller service is then used to get an instance of my 'CalculaterCtrl'.
+
+After the red-green-refactor test, in order for my tests to pass I had to change the way my functions were written in the controller. The first change I made was to add $scope to the functions so that I could use them in the testing suite. 
+
+The second change I made, made for a more defensive programming approach. I used if statements to check if the values being passed into functions were in fact numbers. If a value is not a number then the error would be caught and alert the user that the input should be a number. 
+
+It is through implementing these tests I was able to analyse and change my code to fit better with the defensive programming approach.
+
+
 ## Contributing
 
 ### Getting the code up and running
