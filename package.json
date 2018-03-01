@@ -4,7 +4,7 @@
   "description": "Specialist travel agency web app.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "ng build --aot -prod"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,21 @@
   "bugs": {
     "url": "https://github.com/OMC86/angular_holiday/issues"
   },
-  "homepage": "https://github.com/OMC86/angular_holiday#readme"
+  "homepage": "https://github.com/OMC86/angular_holiday#readme",
+  "Dependencies": {
+    "@angular/cli": "^1.7.2",
+    "@angular/compiler-cli": "^5.2.7",
+    "typescript": "~2.3.3"
+  },
+  "engines": {
+    "node": "6.9.1",
+    "npm": "3.10.8"
+  },
+  "devDependencies": {
+    "enhanced-resolve": "^3.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "start": "node server.js"
 }
