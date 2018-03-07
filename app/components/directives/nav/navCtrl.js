@@ -3,8 +3,11 @@
  */
 angular.module('EmeraldApp')
 
-	.controller('NavCtrl', ['$scope', function($scope){
+	.controller('NavCtrl', ['$scope', '$location', function($scope, $location){
 
-		$scope.boxlinks = ["Montserrat", "History", "St.Patrick's Day", "Accomodation", "Activities", "Inclusive Itinerary"]
+		$scope.goTo= function(id){
+	    	$location.url(id);
+	    };
 
 	}]);
+

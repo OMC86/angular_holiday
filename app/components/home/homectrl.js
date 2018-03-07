@@ -26,5 +26,7 @@ angular.module('EmeraldApp')
 	    $scope.openForm = function(){
 	    	$rootScope.$broadcast('openF');
 	    };
+
+
 		
   	}]);
