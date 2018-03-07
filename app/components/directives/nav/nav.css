@@ -17,3 +17,28 @@
 nav.navbar.navbar-inverse.navbar-fixed-top{
 	background-color: #4a4a4a;
 }
+
+.drop-btn{
+	margin-top: -5px;
+	background-color: inherit;
+	border: none;
+	color: #fff;
+}
+
+.dropdown-container{
+	margin-top: -15px;
+	margin-left: 25px;
+	background-color: #4a4a4a;
+	height: 225px;
+	width: 250px;
+	opacity: 0.9;
+}
+
+.dropdown-container > li{
+	padding-bottom: 20px;
+	margin-left: -25px;
+}
+
+.dropdown-container > li > a{
+	font-size: 18px;
+}
