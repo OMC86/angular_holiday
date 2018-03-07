@@ -2,7 +2,7 @@
 #home-image-container{
 	max-width:100%;
 	height:600px;
-	background-image: url('/angular_holiday/assets/montserrat-wide.jpg'); 
+	background-image: url('/assets/montserrat-wide.jpg');
 	background-repeat: no-repeat;
 	background-size: cover; 
 }
@@ -41,42 +41,42 @@
 
 #box-one{
 	max-width: 100%;
-	background-image: url('/angular_holiday/assets/mont-volcano.jpg');
+	background-image: url('/assets/mont-volcano.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 }
 
 #box-two{
 	width: 100%;
-	background-image: url('/angular_holiday/assets/stPatrick.jpeg');
+	background-image: url('/assets/stPatrick.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 }
 
 #box-three{
 	width: 100%;
-	background-image: url('/angular_holiday/assets/mont-patrick.jpg');
+	background-image: url('/assets/mont-patrick.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  	
 }
 
 #box-four{
 	width: 100%;
-	background-image: url('/angular_holiday/assets/hotel-room.jpg');
+	background-image: url('/assets/hotel-room.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  	
 }
 
 #box-five{
 	width: 100%;
-	background-image: url('/angular_holiday/assets/coral.jpg');
+	background-image: url('/assets/coral.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  	
 }
 
 #box-six{
 	width: 100%;
-	background-image: url('/angular_holiday/assets/mont-night.jpeg');
+	background-image: url('/assets/mont-night.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;  	
 }

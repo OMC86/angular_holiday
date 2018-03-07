@@ -7,7 +7,7 @@ angular.module('EmeraldApp')
 		$scope.emappPageTitle = {
 			h1:'Montserrat',
 			h2:'Activities',
-			img: {path:'assets/caribbean-kids.jpg', name: 'kids in the surf'}
+			img: {path:'/assets/caribbean-kids.jpg', name: 'kids in the surf'}
 
 		};
 		
