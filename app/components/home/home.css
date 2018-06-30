@@ -41,7 +41,7 @@
 
 #box-one{
 	max-width: 100%;
-	background-image: url('/assets/mont-volcano.jpg');
+	background-image: url('assets/mont-volcano.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 }
