@@ -1,52 +1,72 @@
-<div class="container-fluid">
-	<div class='row'>
-		<div id='booking-background'>
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12 col-md-8">
-
-						<!--Box with toggle for forms-->
-						<div id='booking-box'>
-							<a href class='display-form' ng-click='showCalc()'>
-								<div class='col-xs-6 col-md-6'>
-									<div>
-										<p class="form-toggle">Calculator</p>
-										<p class="white">Use the calculator to get an idea of how much things are going to cost</p>
-									</div>
-								</div>
-							</a>
-							<a href class="display-form" ng-click='showForm()'>
-								<div class='col-xs-6 col-md-6'>
-									<div>
-										<p class="form-toggle">Contact form</p>
-										<p class='white'>Fill in our contact form and a member of our team will be in touch</p>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<!--Forms-->
-				<div id="calculator" class="animate" ng-show='visibleCalc'>
-					<calculator></calculator>	
-				</div>
-				<div id="contact-form" class="animate" ng-show='visible'>
-					<contact></contact>							
-				</div>
-				
-				<!--Display message on completion of contact form-->
-				<div class="row">
-					<div class="col-md-8">
-						<div ng-controller='ContactCtrl' class="contact-message animate" ng-show='message'>
-                			<p>{{validation}}</p>
-                			<a href=''><span ng-click='exit()' class="fa fa-times fa-lg"></span>
-                			</a>
-            			</div>
-					</div>
-				</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-md-12">
+			<div class="home-title">
+				<h1 class="centred-p">Bookings</h1>
 			</div>
 		</div>
 	</div>
-</div>	
-			
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-12">
+			<p class="centred-p">To book with Emerald Travel and secure your place for the next trip to Montserrat contact Rochelle Lee
+				at info@emeraldtravel.org or call on 07944342113.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<p>The basic cost of your tailor made holiday includes:</p>
+			<ul id="bullets">
+				<li>Return travel from the UK or Ireland to Montserrat, via Antigua.</li>
+				<li>Transfers</li>
+				<li>Antigua Day tour</li>
+				<li>Luxury accommodation for 10 nights with breakfast</li>
+				<li>Daily activities for the 10 night duration</li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<p>An initial deposit of £300 per person is required together with the Booking Form. We aim to confirm
+				bookings within a week, with many taking just a day or two. You will receive a confirmation invoice
+				once your booking has been made and further details for you to prepare for your holiday. The balance
+				payment is due 12 weeks before departure date.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<p>It is essential, and a condition of booking, that you protect yourself with a suitable travel insurance
+				policy as soon as you book a trip. You will be asked to provide proof of insurance prior to
+				departure.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<p>Please read Emerald Travel Terms and Conditions.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<h3>Meet and Greet</h3>
+			<p>A meet and greet is held in London in November for those interested or booked with Emerald Travel
+				Montserrat. This is an opportunity to find out more about the itinerary, meet with fellow travellers,
+				ask questions or discuss payment plans.
+			</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-xs-12 col-md-8">
+			<h3>Register your Interest</h3>
+			<p>Whether you’re undecided with lingering questions or just want to know more, get in touch. Contact
+				Rochelle Lee at info@emeraldtravel.org or call on 07944342113.
+			</p>
+		</div>
+	</div>
+	<hr>
+</div>
