@@ -18,3 +18,19 @@
 .itinerary-top > .nav-tabs{
 	border-bottom: none; 
 }
+
+.orange-text{
+	color: #D5891A;
+}
+
+.orange-text > p{
+	margin-left: 25px;
+}
+
+.green-text{
+	color: #148F55;
+}
+
+.green-text > p{
+	margin-left: 25px;
+}
