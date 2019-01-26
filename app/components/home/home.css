@@ -41,14 +41,14 @@
 
 #box-one{
 	max-width: 100%;
-	background-image: url('assets/mont-volcano.jpg');
+	background-image: url('/assets/mont-volcano.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 }
 
 #box-two{
 	width: 100%;
-	background-image: url('assets/stPatrick.jpeg');
+	background-image: url('/assets/stPatrick.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;  
 }
